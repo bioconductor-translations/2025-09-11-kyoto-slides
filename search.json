@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html#アウトライン",
     "href": "index.html#アウトライン",
     "title": "SWC @ 千葉大学",
@@ -348,5 +341,12 @@
     "title": "SWC @ 千葉大学",
     "section": "集合写真",
     "text": "集合写真\n\n「公開しても大丈夫」という方は、ぜひご協力ください。\n後ろから撮影した集合写真を公開する場合があります。もし公開を希望されない場合は、お知らせください。\n\nhttps://swcarpentry-ja.github.io/2024-05-30-chiba/"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
