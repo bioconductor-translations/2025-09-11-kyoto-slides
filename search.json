@@ -1,0 +1,352 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html#アウトライン",
+    "href": "index.html#アウトライン",
+    "title": "SWC @ 千葉大学",
+    "section": "アウトライン",
+    "text": "アウトライン\n\nスタッフの自己紹介\nソフトウェアカーペントリーの紹介\nワークショップの流れ\nアイスブレーカー"
+  },
+  {
+    "objectID": "index.html#スタッフの自己紹介",
+    "href": "index.html#スタッフの自己紹介",
+    "title": "SWC @ 千葉大学",
+    "section": "スタッフの自己紹介",
+    "text": "スタッフの自己紹介"
+  },
+  {
+    "objectID": "index.html#ニッタ-ジョエル-インストラクター",
+    "href": "index.html#ニッタ-ジョエル-インストラクター",
+    "title": "SWC @ 千葉大学",
+    "section": "ニッタ ジョエル（インストラクター）",
+    "text": "ニッタ ジョエル（インストラクター）\n\n\n@joelnitta\n\n千葉大学 国際学術研究院 准教授\n研究テーマ：シダ植物の進化、生態学、ゲノム解析\n趣味：ジョギング"
+  },
+  {
+    "objectID": "index.html#西田-孝三インストラクター",
+    "href": "index.html#西田-孝三インストラクター",
+    "title": "SWC @ 千葉大学",
+    "section": "西田 孝三（インストラクター）",
+    "text": "西田 孝三（インストラクター）\n\n\n\nパートタイマー\n東京農工大学 理化学研究所 等\n研究テーマ：パスウェイ-オミクスデータ マッピング・可視化\n趣味：オープンサイエンスコミュニティに貢献すること"
+  },
+  {
+    "objectID": "index.html#露崎-弘毅ヘルパー",
+    "href": "index.html#露崎-弘毅ヘルパー",
+    "title": "SWC @ 千葉大学",
+    "section": "露崎 弘毅（ヘルパー）",
+    "text": "露崎 弘毅（ヘルパー）\n\n\n@kokitsuyuzaki\n\n千葉大学 医学研究院 人工知能（AI）医学 特任講師\n研究テーマ: パッケージング、（シングルセル）オミックス解析\n趣味: サーフィン、パン作り"
+  },
+  {
+    "objectID": "index.html#行動規範",
+    "href": "index.html#行動規範",
+    "title": "SWC @ 千葉大学",
+    "section": "行動規範",
+    "text": "行動規範\nどなたでも気兼ねなくワークショップに参加できるように、行動規範があります。\n行動規範に反する行為があった場合は、インシデントレポートフォームで報告することができます。"
+  },
+  {
+    "objectID": "index.html#jsbiについて",
+    "href": "index.html#jsbiについて",
+    "title": "SWC @ 千葉大学",
+    "section": "JSBiについて",
+    "text": "JSBiについて\n\n\nこのワークショップは 日本バイオインフォマティクス学会 の 公募研究会・地域部会として採択され、ご協力をいただいています。\n非会員の方はぜひ入会をご検討ください。"
+  },
+  {
+    "objectID": "index.html#準備",
+    "href": "index.html#準備",
+    "title": "SWC @ 千葉大学",
+    "section": "準備",
+    "text": "準備\n\nソフトウェアのインストール（bash、git、R, RStudio）\nファイルのダウンロード\n\nbash\n\nワークショップ前アンケート"
+  },
+  {
+    "objectID": "index.html#ソフトウェアカーペントリーの紹介",
+    "href": "index.html#ソフトウェアカーペントリーの紹介",
+    "title": "SWC @ 千葉大学",
+    "section": "ソフトウェアカーペントリーの紹介",
+    "text": "ソフトウェアカーペントリーの紹介"
+  },
+  {
+    "objectID": "index.html#問題",
+    "href": "index.html#問題",
+    "title": "SWC @ 千葉大学",
+    "section": "問題",
+    "text": "問題\n\n\n\n研究者は近年、コードを使うことが必要不可欠になっています。\n多くの研究者は独学でコードを学びます。\nしかし、効率があまり良くありません。"
+  },
+  {
+    "objectID": "index.html#ソフトウェアカーペントリーswcの解決法",
+    "href": "index.html#ソフトウェアカーペントリーswcの解決法",
+    "title": "SWC @ 千葉大学",
+    "section": "ソフトウェアカーペントリー（SWC）の解決法",
+    "text": "ソフトウェアカーペントリー（SWC）の解決法\n\n\n\n研究者がコミュニティを作り、互いに教え合います。\n2日間にわたるワークショップで、3〜4つのレッスンを学びます。\n\nhttps://software-carpentry.org/"
+  },
+  {
+    "objectID": "index.html#ワークショップ",
+    "href": "index.html#ワークショップ",
+    "title": "SWC @ 千葉大学",
+    "section": "ワークショップ",
+    "text": "ワークショップ\n\n\n\n誰でも参加可能\n無料または少額で提供\nワークショップの指導には資格が必要です。\n改善のためのフィードバックを重視します。"
+  },
+  {
+    "objectID": "index.html#日本ではまだ始まったばかり",
+    "href": "index.html#日本ではまだ始まったばかり",
+    "title": "SWC @ 千葉大学",
+    "section": "日本ではまだ始まったばかり",
+    "text": "日本ではまだ始まったばかり\n\n今回が第2回目の対面日本語ワークショップです。\n\n今後も増やしていく予定です。\n\n翻訳活動も行っています。"
+  },
+  {
+    "objectID": "index.html#参加者大募集中",
+    "href": "index.html#参加者大募集中",
+    "title": "SWC @ 千葉大学",
+    "section": "参加者大募集中!",
+    "text": "参加者大募集中!\n\nSlack\n\nhttps://slack-invite.carpentries.org/ から Slack に参加し、#local-japan チャンネルに入ってください。\n\nGitHub: https://swcarpentry-ja.github.io/"
+  },
+  {
+    "objectID": "index.html#ワークショップの流れ",
+    "href": "index.html#ワークショップの流れ",
+    "title": "SWC @ 千葉大学",
+    "section": "ワークショップの流れ",
+    "text": "ワークショップの流れ"
+  },
+  {
+    "objectID": "index.html#内容",
+    "href": "index.html#内容",
+    "title": "SWC @ 千葉大学",
+    "section": "内容",
+    "text": "内容\n\n25日：Shell、Git\n26日：R\n\n上記のリンクからレッスンの内容にアクセスできます（ChatGPTによる翻訳が含まれています）"
+  },
+  {
+    "objectID": "index.html#swcワークショップの流れ",
+    "href": "index.html#swcワークショップの流れ",
+    "title": "SWC @ 千葉大学",
+    "section": "SWCワークショップの流れ",
+    "text": "SWCワークショップの流れ\n\n軽いスライドによる内容の説明\nライブコーディング"
+  },
+  {
+    "objectID": "index.html#ライブコーディングとは",
+    "href": "index.html#ライブコーディングとは",
+    "title": "SWC @ 千葉大学",
+    "section": "ライブコーディングとは？",
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターが入力するコードを、同時に自分のパソコンで入力します。\nコードを理解することを最優先してください（メモを取るよりも）。"
+  },
+  {
+    "objectID": "index.html#ライブコーディングとは-1",
+    "href": "index.html#ライブコーディングとは-1",
+    "title": "SWC @ 千葉大学",
+    "section": "ライブコーディングとは？",
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターは参加者の理解を確認します（例：「〜ができましたか？」）\n理解できている場合は緑の付箋をラップトップに貼ってください。\n困ったことがある場合は赤い付箋をラップトップに貼ってください。\n\nヘルパーが助けに行きます。"
+  },
+  {
+    "objectID": "index.html#コラボレイティブノート",
+    "href": "index.html#コラボレイティブノート",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレイティブ・ノート",
+    "text": "コラボレイティブ・ノート\nEtherpadにコードを貼っておきます。\n\nインストラクターが進みすぎてコードが見えなくなった場合は、Etherpadのメモを参照してください。\n\n参加者も自由に書き込んでください。"
+  },
+  {
+    "objectID": "index.html#フィードバックの種類",
+    "href": "index.html#フィードバックの種類",
+    "title": "SWC @ 千葉大学",
+    "section": "フィードバックの種類",
+    "text": "フィードバックの種類\n\n感想（1日の終わりに付箋に記入していただきます）\nワークショップ前後のアンケート"
+  },
+  {
+    "objectID": "index.html#アイスブレーカー",
+    "href": "index.html#アイスブレーカー",
+    "title": "SWC @ 千葉大学",
+    "section": "アイスブレーカー",
+    "text": "アイスブレーカー\n隣の方に自己紹介をしましょう\n\n研究テーマは何ですか？\n趣味は何ですか？"
+  },
+  {
+    "objectID": "index.html#データの準備",
+    "href": "index.html#データの準備",
+    "title": "SWC @ 千葉大学",
+    "section": "データの準備",
+    "text": "データの準備\n\nshell-lesson-data.zipをダウンロードして、デスクトップに移動してください。\nファイルを解凍します。デスクトップにshell-lesson-dataという新しいフォルダが作成されているはずです。"
+  },
+  {
+    "objectID": "index.html#人間とコンピュータの相互作用",
+    "href": "index.html#人間とコンピュータの相互作用",
+    "title": "SWC @ 千葉大学",
+    "section": "人間とコンピュータの相互作用",
+    "text": "人間とコンピュータの相互作用\n\n人間はGUI（グラフィカルユーザインターフェース）またはCLI（コマンドラインインターフェース）を使ってコンピュータと対話します。\nGUI: 視覚的で直感的な操作が可能ですが、反復作業には効率的ではありません。\nCLI（Unixシェル）: 反復作業に効率的で、タスクを迅速に自動化できます。"
+  },
+  {
+    "objectID": "index.html#nelleのパイプライン",
+    "href": "index.html#nelleのパイプライン",
+    "title": "SWC @ 千葉大学",
+    "section": "Nelleのパイプライン",
+    "text": "Nelleのパイプライン\n\nサンプルデータセットは”Nelle Nemo”のストーリーに基づいています。\nNelle Nemoは海洋生物学者で、海洋生物をサンプリングしています。\nNelleのタスク: goostats.shを使って1520のサンプルのタンパク質量を測定します。\n課題: GUIを使用すると、Nelleは1520のファイルを手動で実行する必要があり、12時間以上かかります。シェルを使えば、これをより効率的に行うことができるでしょうか？"
+  },
+  {
+    "objectID": "index.html#チャレンジ-ls",
+    "href": "index.html#チャレンジ-ls",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ: ls",
+    "text": "チャレンジ: ls\n\n\npwdが/Users/backupを表示し、-rがlsに逆順で表示するよう指示する場合、次の出力を得るにはどのコマンドを使用しますか:\npnas_sub/ pnas_final/ original/\n\nls pwd\nls -r -F\nls -r -F /Users/backup"
+  },
+  {
+    "objectID": "index.html#チャレンジ-相対パス",
+    "href": "index.html#チャレンジ-相対パス",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ: 相対パス",
+    "text": "チャレンジ: 相対パス\n\n\npwdが/Users/thingを表示している場合、ls -F ../backupは何を表示しますか？\n\n../backup: No such file or directory\n2012-12-01 2013-01-08 2013-01-27\n2012-12-01/ 2013-01-08/ 2013-01-27/\noriginal/ pnas_final/ pnas_sub/"
+  },
+  {
+    "objectID": "index.html#なぜgitを使うのか",
+    "href": "index.html#なぜgitを使うのか",
+    "title": "SWC @ 千葉大学",
+    "section": "なぜGitを使うのか？",
+    "text": "なぜGitを使うのか？\n\nGitとは、ファイル（コード）を追跡するソフトです。\nMS Wordの「変更履歴の追跡」機能に似ています。\nコードが「壊れた」時に巻き戻せます。\nコードの共有や共同作業を簡単にします。"
+  },
+  {
+    "objectID": "index.html#チャレンジ埋もれたファイルを無視する",
+    "href": "index.html#チャレンジ埋もれたファイルを無視する",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：埋もれたファイルを無視する",
+    "text": "チャレンジ：埋もれたファイルを無視する\n以下のようなディレクトリ構造があるとします：\nresults/data\nresults/plots\nresults/dataではなく、results/plotsのみを無視するにはどうすればよいでしょう？"
+  },
+  {
+    "objectID": "index.html#チャレンジログファイル",
+    "href": "index.html#チャレンジログファイル",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：ログファイル",
+    "text": "チャレンジ：ログファイル\n仮に log_01、log_02、log_03といった中間ログファイルを作成するスクリプトを書いたとします。 これらのログファイルは保存しておきたいものの、gitで追跡したくありません。\n\nlog_01、log_02などのファイルを無視するためのルールを1つだけ.gitignoreに記入してください。\n入力したパターンが正常に動作するか確認するために、log_01などのファイルを作成してください。\n最終的にlog_01ファイルが重要であると判明しました。.gitignoreを編集せずにこのファイルを追跡対象に加えてください。\n隣の人と、「追跡したくないファイルにはどのようなものがあるか」「.gitignoreにどのように記述するか」を話し合ってください。"
+  },
+  {
+    "objectID": "index.html#認証の設定",
+    "href": "index.html#認証の設定",
+    "title": "SWC @ 千葉大学",
+    "section": "認証の設定",
+    "text": "認証の設定\n\nリモートリポジトリに接続する前に、自分のコンピュータをGitHubに認証する方法を設定する必要があります。\nこれにより、GitHubはあなたのコンピュータからのアクセスを信頼します。"
+  },
+  {
+    "objectID": "index.html#ssh-プロトコルとは",
+    "href": "index.html#ssh-プロトコルとは",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH プロトコルとは？",
+    "text": "SSH プロトコルとは？\n\nコマンドラインでアクセスを認証する一般的な方法を設定します。\nこの方法は「Secure Shell Protocol（SSH）」と呼ばれます。\nSSHは、暗号化されたネットワークプロトコルで、通常は安全でないネットワークを介して安全な通信を可能にします。"
+  },
+  {
+    "objectID": "index.html#ssh-鍵ペアの仕組み",
+    "href": "index.html#ssh-鍵ペアの仕組み",
+    "title": "SWC @ 千葉大学",
+    "section": "SSH 鍵ペアの仕組み",
+    "text": "SSH 鍵ペアの仕組み\n\nSSHは「鍵ペア」を使います。\n鍵ペアはアクセスを検証するために協働して動作する2つの鍵です。\n一方は公開鍵（public key）、もう一方は秘密鍵（private key）と呼ばれます。"
+  },
+  {
+    "objectID": "index.html#公開鍵と秘密鍵の例え",
+    "href": "index.html#公開鍵と秘密鍵の例え",
+    "title": "SWC @ 千葉大学",
+    "section": "公開鍵と秘密鍵の例え",
+    "text": "公開鍵と秘密鍵の例え\n\n公開鍵を南京錠に例えます。\n秘密鍵はその南京錠を開ける鍵です。\n公開鍵をGitHubアカウントに設定し、「この南京錠で通信をロックしてください」とします。\nこれにより、秘密鍵を持つコンピュータだけが通信を解読し、GitコマンドをGitHubアカウントとして送信できます。"
+  },
+  {
+    "objectID": "index.html#チャレンジgithub-の-gui",
+    "href": "index.html#チャレンジgithub-の-gui",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：GitHub の GUI",
+    "text": "チャレンジ：GitHub の GUI\nGitHub の planets リポジトリに移動してください。\n「Code」ボタンの下にある「XX commits」というテキストを見つけてクリックします（「XX」は数字です）。各コミットの右側にある3つのボタンにカーソルを合わせてクリックします。\n\nこれらのボタンからどのような情報を収集・探索できますか？\nシェルで同じ情報を得るにはどうしますか？"
+  },
+  {
+    "objectID": "index.html#共同作業",
+    "href": "index.html#共同作業",
+    "title": "SWC @ 千葉大学",
+    "section": "共同作業",
+    "text": "共同作業"
+  },
+  {
+    "objectID": "index.html#github-を使った共同作業をしてみましょう",
+    "href": "index.html#github-を使った共同作業をしてみましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "GitHub を使った共同作業をしてみましょう",
+    "text": "GitHub を使った共同作業をしてみましょう\n\n今回の課題は、ペアを組んで行います。\n一人は「オーナー」、もう一人は「コラボレーター」を担当します。\nコラボレーターの目標は、オーナーのリポジトリに変更を加えることです。\n最後に役割を交代し、両方の人がオーナーとコラボレーターの役割を経験します。"
+  },
+  {
+    "objectID": "index.html#コラボレーターにアクセス権限を与える",
+    "href": "index.html#コラボレーターにアクセス権限を与える",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレーターにアクセス権限を与える",
+    "text": "コラボレーターにアクセス権限を与える\n\nGitHub のリポジトリページで「Settings」ボタンをクリックします。\n「Collaborators」を選択します。\n「Add people」をクリックし、パートナーのユーザー名を入力します。"
+  },
+  {
+    "objectID": "index.html#コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "href": "index.html#コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレーターがオーナーのリポジトリへのアクセスを受け入れる",
+    "text": "コラボレーターがオーナーのリポジトリへのアクセスを受け入れる\n\nhttps://github.com/notifications にアクセスするか、メール通知を確認してください。\nオーナーのリポジトリへのアクセスを承認します。"
+  },
+  {
+    "objectID": "index.html#オーナーのリポジトリをクローンする",
+    "href": "index.html#オーナーのリポジトリをクローンする",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリをクローンする",
+    "text": "オーナーのリポジトリをクローンする\n\nコラボレーターはオーナーのリポジトリのコピーを自分のマシンにダウンロードします（クローンする）。\n自分の planets.git バージョンを上書きしないよう、オーナーのリポジトリを別の場所にクローンしてください。"
+  },
+  {
+    "objectID": "index.html#オーナーのリポジトリをクローンする-1",
+    "href": "index.html#オーナーのリポジトリをクローンする-1",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリをクローンする",
+    "text": "オーナーのリポジトリをクローンする\nデスクトップフォルダにクローンする場合:\n$ git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets\nvlad をオーナーのユーザー名に置き換えてください。\nクローンパス（~/Desktop/vlad-planets）を指定しない場合、自分の planets フォルダ内にクローンされるので、最初にデスクトップフォルダに移動してください。"
+  },
+  {
+    "objectID": "index.html#クローンしたリポジトリに変更を加える",
+    "href": "index.html#クローンしたリポジトリに変更を加える",
+    "title": "SWC @ 千葉大学",
+    "section": "クローンしたリポジトリに変更を加える",
+    "text": "クローンしたリポジトリに変更を加える\n\nコラボレーターは、オーナーのリポジトリのクローンに変更を加えます。例えば:\n\ncd ~/Desktop/vlad-planets\nnano pluto.txt\ngit add pluto.txt\ngit commit -m \"Add notes about Pluto\""
+  },
+  {
+    "objectID": "index.html#変更を加えたファイルをリモートに送るプッシュ",
+    "href": "index.html#変更を加えたファイルをリモートに送るプッシュ",
+    "title": "SWC @ 千葉大学",
+    "section": "変更を加えたファイルをリモートに送る（プッシュ）",
+    "text": "変更を加えたファイルをリモートに送る（プッシュ）\ngit push origin main"
+  },
+  {
+    "objectID": "index.html#オーナーのリポジトリを確認",
+    "href": "index.html#オーナーのリポジトリを確認",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのリポジトリを確認",
+    "text": "オーナーのリポジトリを確認\n\nオーナーのリポジトリを再確認し、コラボレーターが行った新しいコミットを確認します。\nブラウザを更新する必要がある場合もあります。"
+  },
+  {
+    "objectID": "index.html#オーナーのローカルリポジトリの更新",
+    "href": "index.html#オーナーのローカルリポジトリの更新",
+    "title": "SWC @ 千葉大学",
+    "section": "オーナーのローカルリポジトリの更新",
+    "text": "オーナーのローカルリポジトリの更新\n\nオーナーが以下を実行します：\n\ngit pull origin main\n\nこれで、3つのリポジトリ（オーナーのローカル、オーナーのリモート、コラボレーターのリポジトリ）が同期されます。"
+  },
+  {
+    "objectID": "index.html#もう一回やってみましょう",
+    "href": "index.html#もう一回やってみましょう",
+    "title": "SWC @ 千葉大学",
+    "section": "もう一回やってみましょう",
+    "text": "もう一回やってみましょう\n\n今度は役割を交代して、もう一度試してみましょう。"
+  },
+  {
+    "objectID": "index.html#チャレンジ変更のレビュー",
+    "href": "index.html#チャレンジ変更のレビュー",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：変更のレビュー",
+    "text": "チャレンジ：変更のレビュー\nオーナーがコラボレーターに情報を提供せずにリポジトリにコミットをプッシュしました。\n\nコマンドラインでは、コラボレーターは何が変更されたかをどのように確認できますか？\nGitHub ではどのように確認できますか？"
+  },
+  {
+    "objectID": "index.html#日目のおさらい",
+    "href": "index.html#日目のおさらい",
+    "title": "SWC @ 千葉大学",
+    "section": "1日目のおさらい",
+    "text": "1日目のおさらい\n\nシェルは研究に必要不可欠なスキルです。\n\nオープンソースソフトウェアの活用\nサーバーの操作\ngit の使用にも必須\n\ngit はコードの細かな変更を追跡し、共有を可能にします。"
+  },
+  {
+    "objectID": "index.html#集合写真",
+    "href": "index.html#集合写真",
+    "title": "SWC @ 千葉大学",
+    "section": "集合写真",
+    "text": "集合写真\n\n「公開しても大丈夫」という方は、ぜひご協力ください。\n後ろから撮影した集合写真を公開する場合があります。もし公開を希望されない場合は、お知らせください。\n\nhttps://swcarpentry-ja.github.io/2024-05-30-chiba/"
+  }
+]
