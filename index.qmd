@@ -240,3 +240,95 @@ execute:
 - 研究テーマは何ですか？
 
 - 趣味は何ですか？
+
+# Unixシェル
+
+## データの準備
+
+- [shell-lesson-data.zip](https://swcarpentry.github.io/shell-novice/data/shell-lesson-data.zip)をダウンロードして、ファイルをデスクトップに移動してください。
+
+- ファイルを解凍します。**デスクトップに`shell-lesson-data`という新しいフォルダが作成されているはずです。**
+
+## 人間とコンピュータの相互作用
+
+- 人間は**GUI**（グラフィカルユーザインターフェース）または**CLI**（コマンドラインインターフェース）を使ってコンピュータと**対話**します。
+
+- **GUI**: 直感的でメニュー駆動型ですが、反復作業には効率的ではありません。
+
+- **CLI**（Unixシェル）: 反復作業に効率的で、タスクを迅速に自動化できます。
+
+---
+
+- シェルはユーザーが入力したコマンドを**解釈**して**実行**します。
+
+- 人気のあるUnixシェル: **Bash**（**B**ourne **A**gain **SH**ell）。
+
+- シェルを使用する利点:
+  - 反復作業を自動化
+  - 強力なパイプラインで効率的なデータ処理
+  - リモートマシンとのやり取りや高性能コンピューティングに不可欠
+
+---
+
+- 今日は**コマンド**を使ってシェルと対話する方法を学びます
+
+## Nelleのパイプライン
+
+- サンプルデータセットは"Nelle Nemo"のストーリーに基づいています
+
+- Nelle Nemoは海洋生物学者で、海洋生物をサンプリングしています。
+
+- Nelleのタスク: `goostats.sh`を使って1520のサンプルのタンパク質量を測定します。
+
+- 課題: GUIを使用する場合、Nelleは1520のファイルを手動で実行する必要があり、12時間以上かかります。**Nelleはシェルを使ってこれをより効率的に行うことができるでしょうか？**
+
+---
+
+![](https://swcarpentry.github.io/shell-novice/fig/filesystem.svg)
+
+
+---
+
+![](https://swcarpentry.github.io/shell-novice/fig/home-directories.svg)
+
+## チャレンジ: `ls` {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+`pwd`が`/Users/backup`を表示し、`-r`が`ls`に逆順で表示するよう指示する場合、**次の出力を得るにはどのコマンドを使用しますか:**
+
+```bash
+pnas_sub/ pnas_final/ original/
+```
+
+1. `ls pwd`
+1. `ls -r -F`
+1. `ls -r -F /Users/backup`
+:::
+
+::: {.column width="50%"}
+![](https://swcarpentry.github.io/shell-novice/fig/filesystem-challenge.svg)
+:::
+
+::::
+
+## チャレンジ: 相対パス {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+`pwd`が`/Users/thing`を表示している場合、**`ls -F ../backup`は何を表示しますか？**
+
+1. `../backup: No such file or directory`
+1. `2012-12-01 2013-01-08 2013-01-27`
+1. `2012-12-01/ 2013-01-08/ 2013-01-27/`
+1. `original/ pnas_final/ pnas_sub/`
+
+:::
+
+::: {.column width="50%"}
+![](https://swcarpentry.github.io/shell-novice/fig/filesystem-challenge.svg)
+:::
+::::
