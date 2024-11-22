@@ -7,22 +7,24 @@ execute:
   echo: true
 ---
 
-# ソフトウェア<br>カーペントリーの紹介
+# ソフトウェア<br>カーペントリー
 
-[SWC @ 千葉大学](https://swcarpentry-ja.github.io/2024-05-30-chiba/)
+::: {.medlarge}
 
-2024-05-30
+千葉大学 2024-11-25
 
-<https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/swc-intro>
+<https://swcarpentry-ja.github.io/2024-11-25-chiba-slides/>
 
-# アウトライン
+:::
+
+## アウトライン
 
 - スタッフの自己紹介
 - ソフトウェアカーペントリーの紹介
 - ワークショップの流れ
 - アイスブレーカー
 
-# スタッフの自己紹介
+## スタッフの自己紹介 {.center}
 
 ## ニッタ ジョエル<br>（インストラクター）
 
@@ -75,23 +77,6 @@ execute:
 :::
 :::
 
-## 大田 達郎（ヘルパー）
-
-::: {.columns}
-::: {.column}
-[`@inutano`](https://github.com/inutano)
-
-- 千葉大学 医学研究院 人工知能（AI）医学 准教授
-
-- 研究テーマ: 生命科学データベース・データ解析プラットフォーム
-
-- 趣味: サッカー観戦
-:::
-::: {.column}
-![](../images/Tazro-Ohta.jpg){height=350px}
-:::
-:::
-
 ## 行動規範
 
 どなたでも気兼ねなくワークショップに参加できるように、[行動規範](https://carpentries-coc.readthedocs.io/ja/latest/topic_folders/policies/code-of-conduct.html)があります。
@@ -100,15 +85,14 @@ execute:
 
 ## 準備
 
-- [ソフトウェアのインストール（git、docker）](https://swcarpentry-ja.github.io/2024-05-30-chiba/#setup)
+- [ソフトウェアのインストール（bash、git、R, RStudio）](https://swcarpentry-ja.github.io/2024-11-25-chiba/#setup)
 
 - ファイルのダウンロード
   - [bash](https://swcarpentry-ja.github.io/shell-novice/#download-files)
-  - [docker](https://carpentries-incubator.github.io/docker-introduction/setup.html#files-to-download)
 
-- [ワークショップ前アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2024-05-30-chiba)
+- [ワークショップ前アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2024-11-25-chiba)
 
-# ソフトウェアカーペントリーの紹介
+## ソフトウェアカーペントリーの紹介 {.center}
 
 ## 問題
 
@@ -145,6 +129,9 @@ execute:
 
 ## ワークショップ
 
+:::: {.columns}
+
+::: {.column width="40%"}
 - 誰でも参加できます
 
 - 無料か少額
@@ -152,16 +139,24 @@ execute:
 - ワークショップを教えるのに[資格](https://carpentries.org/become-instructor/)が必要
 
 - 改善のためのフィードバックは重視されています
+:::
 
-<img src="https://software-carpentry.org/files/workshops/mit-2013-slice.jpg" alt="drawing" height="150"/>
+::: {.column width="60%"}
+![](https://mablab.org/img/post/2018-04-24_dcapril_s.jpg)
 
-## 2012年以来、55ヵ国で<br>2,164ワークショップを実施
+:::
 
-![](../images/swc_workshops_2024-05-25.png)
+::::
+
+---
+
+### 世界各国で実施
+
+![](https://feeds.carpentries.org/plot_workshops_map.svg)
 
 ## 日本ではまだ始まったばかり
 
-- 今回が**初**対面日本語ワークショップ
+- 今回が**第2回目**対面日本語ワークショップ
   - これから増やす予定
 
 - 翻訳活動も行っています
@@ -174,15 +169,15 @@ execute:
 
 - GitHub: <https://swcarpentry-ja.github.io/>
 
-# ワークショップの流れ
+## ワークショップの流れ {.center}
 
 ## 内容
 
-- ３０日：[Shell](https://swcarpentry-ja.github.io/shell-novice)、[Git](https://swcarpentry-ja.github.io/git-novice)
+- 25日：[Shell](https://swcarpentry-ja.github.io/shell-novice)、[Git](https://swcarpentry-ja.github.io/git-novice)
 
-- ３１日：[Docker](https://carpentries-incubator.github.io/docker-introduction)
+- 26日：[R](https://swcarpentry-ja.github.io/r-novice-gapminder/)
 
-上記のリンクからレッスンの内容にアクセスできます<br>（翻訳がまだ完了していない部分があります）
+上記のリンクからレッスンの内容にアクセスできます<br>（ChatGPTによる翻訳が含まれています）
 
 ## SWCワークショップの流れ
 
@@ -199,7 +194,7 @@ execute:
 - そのコードを**理解すること**を最も優先して下さい<br>（メモをとるなどよりも）
 :::
 ::: {.column}
-![](https://datacarpentry.org/images//involved2.jpg)
+![](images/chiba_swc_2024-05-30.png)
 :::
 :::
 
@@ -215,7 +210,7 @@ execute:
   - ヘルパーが助けに行きます
 :::
 ::: {.column}
-![](https://datacarpentry.org/images//DC_room3.jpg)
+![](https://carpentries.github.io/instructor-training/fig/Scene_1_blue_stickies_labeled.jpeg)
 :::
 :::
 
@@ -223,24 +218,24 @@ execute:
 
 <br><br>
 
-インストラクターが聞かなくても、何か問題があった時に**声をかけて下さい**
+インストラクターが聞かなくても、何か問題があった時に**声をかけて下さい**（あるいは、赤い付箋を貼ってください）
 
 ## コラボレイティブ・ノート
 
-[HackMD](https://hackmd.io/@swcarpentry-ja/rkXVzlJV0)にコードを貼っておきます。
+[Etherpad](https://pad.carpentries.org/2024-11-25-chiba)にコードを貼っておきます。
 
-- もしインストラクターが進んで、コードが見えなくなったら、HackMDのメモを参照して下さい。
-  - 参加者も自由に書き込んでいいです
+- もしインストラクターが進んで、コードが見えなくなったら、Etherpadのメモを参照して下さい。
+  - 参加者もご自由に書き込んでください
 
 ## フィードバックの種類
 
 - 感想（１日の終わりに付箋に書いていただく）
 
-- ワークショップ前後の[アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2024-05-30-chiba)
+- ワークショップ前後の[アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2024-11-25-chiba)
 
-# アイスブレーカー
+## アイスブレーカー
 
-## 隣の方に自己紹介しましょう
+隣の方に自己紹介しましょう
 
 - 研究テーマは何ですか？
 
