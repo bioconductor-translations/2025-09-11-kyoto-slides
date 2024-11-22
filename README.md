@@ -1,8 +1,8 @@
-## 2024-05-30-chiba-slides
+## 2024-11-25-chiba-slides
 
-[Slides](https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/) for Software Carpenty Workshop [2024-05-30-chiba （Git と Docker を使ってデータ解析の再現性を向上させる）](https://swcarpentry-ja.github.io/2024-05-30-chiba/)
+[Slides](https://swcarpentry-ja.github.io/2024-11-25-chiba-slides/) for Software Carpenty Workshop [2024-11-25-chiba （Shell と Git と R の使い方を学び、データサイエンスの基礎を身につける）](https://swcarpentry-ja.github.io/2024-11-25-chiba/)
 
-Software Carpenty ワークショップ [2024-05-30-chiba （Git と Docker を使ってデータ解析の再現性を向上させる）](https://swcarpentry-ja.github.io/2024-05-30-chiba/)の[スライド](https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/)
+Software Carpenty ワークショップ [2024-11-25-chiba （Shell と Git と R の使い方を学び、データサイエンスの基礎を身につける）](https://swcarpentry-ja.github.io/2024-11-25-chiba/)の[スライド](https://swcarpentry-ja.github.io/2024-11-25-chiba-slides/)
 
 All content made available by the authors under [CC-BY 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
