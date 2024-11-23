@@ -343,6 +343,118 @@
     "text": "1日目のおさらい\n\nシェルは研究に必要不可欠なスキルです。\n\nオープンソースソフトウェアの活用\nサーバーの操作\ngit の使用にも必須\n\ngit はコードの細かな変更を追跡し、共有を可能にします。"
   },
   {
+    "objectID": "index.html#質問と目的",
+    "href": "index.html#質問と目的",
+    "title": "SWC @ 千葉大学",
+    "section": "質問と目的",
+    "text": "質問と目的\n質問\n\n自分の変更が他の人の変更とコンフリクトする場合はどうすればいいですか?\n\n目的\n\nコンフリクトとは何か、いつ発生する可能性があるかを説明します。\nマージによって生じる競合を解決します。"
+  },
+  {
+    "objectID": "index.html#コンフリクトを作る-コラボレーターが編集",
+    "href": "index.html#コンフリクトを作る-コラボレーターが編集",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトを作る (コラボレーターが編集)",
+    "text": "コンフリクトを作る (コラボレーターが編集)\nコラボレーターの方にだけ 1 行追加してみましょう。\n$ nano mars.txt\n$ cat mars.txt\nCold and dry, but everything is my favorite color\nThe two moons may be a problem for Wolfman\nBut the Mummy will appreciate the lack of humidity\nThis line added to Wolfman's copy"
+  },
+  {
+    "objectID": "index.html#コンフリクトを作る-コラボレーターがコミット",
+    "href": "index.html#コンフリクトを作る-コラボレーターがコミット",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトを作る (コラボレーターがコミット)",
+    "text": "コンフリクトを作る (コラボレーターがコミット)\nコラボレーターの方で変更をコミットします。\n$ git add mars.txt\n$ git commit -m \"Add a line in our home copy\"\n[main 5ae9631] Add a line in our home copy\n 1 file changed, 1 insertion(+)"
+  },
+  {
+    "objectID": "index.html#コンフリクトを作る-コラボレーターがプッシュ",
+    "href": "index.html#コンフリクトを作る-コラボレーターがプッシュ",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトを作る (コラボレーターがプッシュ)",
+    "text": "コンフリクトを作る (コラボレーターがプッシュ)\nコラボレーターの方でコミットを GitHub にプッシュします。\n$ git push origin main\nEnumerating objects: 5, done.\nCounting objects: 100% (5/5), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (3/3), done.\nWriting objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.\nTotal 3 (delta 2), reused 0 (delta 0)\nremote: Resolving deltas: 100% (2/2), completed with 2 local objects.\nTo https://github.com/vlad/planets.git\n   29aba7c..dabb4c8  main -&gt; main"
+  },
+  {
+    "objectID": "index.html#コンフリクトを作る-オーナーが編集",
+    "href": "index.html#コンフリクトを作る-オーナーが編集",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトを作る (オーナーが編集)",
+    "text": "コンフリクトを作る (オーナーが編集)\nオーナーが GitHub から pull せずに、自分のコピーに「別の」変更を加えてもらいます。\n$ nano mars.txt\n$ cat mars.txt\nCold and dry, but everything is my favorite color\nThe two moons may be a problem for Wolfman\nBut the Mummy will appreciate the lack of humidity\nWe added a different line in the other copy"
+  },
+  {
+    "objectID": "index.html#コンフリクトを作る-オーナーがコミット",
+    "href": "index.html#コンフリクトを作る-オーナーがコミット",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトを作る (オーナーがコミット)",
+    "text": "コンフリクトを作る (オーナーがコミット)\nオーナーは変更をローカルにコミットできます:\n$ git add mars.txt\n$ git commit -m \"Add a line in my copy\"\n[main 07ebc69] Add a line in my copy\n 1 file changed, 1 insertion(+)"
+  },
+  {
+    "objectID": "index.html#コンフリクトを作る-オーナーがプッシュできない",
+    "href": "index.html#コンフリクトを作る-オーナーがプッシュできない",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトを作る (オーナーがプッシュ「できない」)",
+    "text": "コンフリクトを作る (オーナーがプッシュ「できない」)\nしかし、オーナーは Git で GitHub にプッシュできません。\n$ git push origin main\nTo https://github.com/vlad/planets.git\n ! [rejected]        main -&gt; main (fetch first)\nerror: failed to push some refs to 'https://github.com/vlad/planets.git'\nhint: Updates were rejected because the remote contains work that you do\nhint: not have locally. This is usually caused by another repository pushing\nhint: to the same ref. You may want to first integrate the remote changes\nhint: (e.g., 'git pull ...') before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details."
+  },
+  {
+    "objectID": "index.html#コンフリクトのイメージ",
+    "href": "index.html#コンフリクトのイメージ",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトのイメージ",
+    "text": "コンフリクトのイメージ\n\nGit は、リモート リポジトリにローカル ブランチに組み込まれていない新しい更新があることを検出したため、プッシュを拒否しました。"
+  },
+  {
+    "objectID": "index.html#コンフリクトの解決-オーナーが-git-pull-する",
+    "href": "index.html#コンフリクトの解決-オーナーが-git-pull-する",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトの解決 (オーナーが git pull する)",
+    "text": "コンフリクトの解決 (オーナーが git pull する)\n必要なのは、GitHub から変更を pull し、現在作業中のコピーにマージしてからプッシュすることです。 まずは pull から始めましょう:\n$ git pull origin main\nremote: Enumerating objects: 5, done.\nremote: Counting objects: 100% (5/5), done.\nremote: Compressing objects: 100% (1/1), done.\nremote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0\nUnpacking objects: 100% (3/3), done.\nFrom https://github.com/vlad/planets\n * branch            main     -&gt; FETCH_HEAD\n    29aba7c..dabb4c8  main     -&gt; origin/main\nAuto-merging mars.txt\nCONFLICT (content): Merge conflict in mars.txt\nAutomatic merge failed; fix conflicts and then commit the result."
+  },
+  {
+    "objectID": "index.html#コンフリクトの解決-拒否されたマージの結果",
+    "href": "index.html#コンフリクトの解決-拒否されたマージの結果",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトの解決 (拒否されたマージの結果)",
+    "text": "コンフリクトの解決 (拒否されたマージの結果)\ngit pullコマンドは、ローカル リポジトリを更新して、リモート リポジトリにすでに含まれている変更を組み込みます。 リモート ブランチからの変更が取得された後、Git はローカル コピーに加えられた変更がリモート リポジトリに加えられた変更と重複していることを検出し、 以前の作業が損なわれないように 2 つのバージョンのマージを拒否します。 コンフリクトは、影響を受けるファイルで下記のようにマークされます。\n$ cat mars.txt\nCold and dry, but everything is my favorite color\nThe two moons may be a problem for Wolfman\nBut the Mummy will appreciate the lack of humidity\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\nWe added a different line in the other copy\n=======\nThis line added to Wolfman's copy\n&gt;&gt;&gt;&gt;&gt;&gt;&gt; dabb4c8c450e8475aee9b14b4383acc99f42af1d"
+  },
+  {
+    "objectID": "index.html#コンフリクトの解決-マーカーを削除し変更を調整する",
+    "href": "index.html#コンフリクトの解決-マーカーを削除し変更を調整する",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトの解決 (マーカーを削除し、変更を調整する)",
+    "text": "コンフリクトの解決 (マーカーを削除し、変更を調整する)\nこのファイルを編集して、これらのマーカーを削除し、変更を調整するのは私たちの仕事です。 ローカル リポジトリでの変更を維持するか、リモート リポジトリでの変更を維持するか、両方を置き換える新しいものを書き込むか、変更を完全に削除するか、何でも好きなように行うことができます。 両方を置き換えて、ファイルを次のようにしてみましょう。\nCold and dry, but everything is my favorite color\nThe two moons may be a problem for Wolfman\nBut the Mummy will appreciate the lack of humidity\nWe removed the conflict on this line"
+  },
+  {
+    "objectID": "index.html#コンフリクトの解決-マージを完了するために変更をコミットする",
+    "href": "index.html#コンフリクトの解決-マージを完了するために変更をコミットする",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトの解決 (マージを完了するために変更をコミットする)",
+    "text": "コンフリクトの解決 (マージを完了するために変更をコミットする)\n$ git add mars.txt\n$ git status\nOn branch main\nAll conflicts fixed but you are still merging.\n  (use \"git commit\" to conclude merge)\n\nChanges to be committed:\n\n    modified:   mars.txt\n$ git commit -m \"Merge changes from GitHub\"\n[main 2abf2b1] Merge changes from GitHub"
+  },
+  {
+    "objectID": "index.html#コンフリクトの解決-ついに-push-してコンフリクトを解決",
+    "href": "index.html#コンフリクトの解決-ついに-push-してコンフリクトを解決",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトの解決 (ついに push してコンフリクトを解決)",
+    "text": "コンフリクトの解決 (ついに push してコンフリクトを解決)\n$ git push origin main\nEnumerating objects: 10, done.\nCounting objects: 100% (10/10), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (6/6), done.\nWriting objects: 100% (6/6), 645 bytes | 645.00 KiB/s, done.\nTotal 6 (delta 4), reused 0 (delta 0)\nremote: Resolving deltas: 100% (4/4), completed with 2 local objects.\nTo https://github.com/vlad/planets.git\n   dabb4c8..2abf2b1  main -&gt; main"
+  },
+  {
+    "objectID": "index.html#コンフリクトの解決-今度はコラボレーターが-pull-する",
+    "href": "index.html#コンフリクトの解決-今度はコラボレーターが-pull-する",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトの解決 (今度はコラボレーターが pull する)",
+    "text": "コンフリクトの解決 (今度はコラボレーターが pull する)\nGit は何を何とマージしたかを追跡しているので、最初の変更を行ったコラボレーターが pull したときに、再度手作業で修正する必要がありません。 今度はコラボレーターが pull してください\n$ git pull origin main\nremote: Enumerating objects: 10, done.\nremote: Counting objects: 100% (10/10), done.\nremote: Compressing objects: 100% (2/2), done.\nremote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0\nUnpacking objects: 100% (6/6), done.\nFrom https://github.com/vlad/planets\n * branch            main     -&gt; FETCH_HEAD\n    dabb4c8..2abf2b1  main     -&gt; origin/main\nUpdating dabb4c8..2abf2b1\nFast-forward\n mars.txt | 2 +-\n 1 file changed, 1 insertion(+), 1 deletion(-)"
+  },
+  {
+    "objectID": "index.html#コンフリクトの解決-コラボレーターがオーナーにマージされた内容を確認",
+    "href": "index.html#コンフリクトの解決-コラボレーターがオーナーにマージされた内容を確認",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトの解決 (コラボレーターがオーナーにマージされた内容を確認)",
+    "text": "コンフリクトの解決 (コラボレーターがオーナーにマージされた内容を確認)\nコラボレーターはオーナーにマージされた内容を確認してみましょう\n$ cat mars.txt\nCold and dry, but everything is my favorite color\nThe two moons may be a problem for Wolfman\nBut the Mummy will appreciate the lack of humidity\nWe removed the conflict on this line"
+  },
+  {
+    "objectID": "index.html#コンフリクトの解決のまとめ",
+    "href": "index.html#コンフリクトの解決のまとめ",
+    "title": "SWC @ 千葉大学",
+    "section": "コンフリクトの解決のまとめ",
+    "text": "コンフリクトの解決のまとめ\n\n2 人以上の人が同じファイルの同じ行を変更すると、競合が発生します。\nバージョン管理システムでは、ユーザーが互いの変更を盲目的に上書きすることは許可されませんが、競合が強調表示されるので、解決できます。"
+  },
+  {
     "objectID": "index.html#チャレンジ変数名",
     "href": "index.html#チャレンジ変数名",
     "title": "SWC @ 千葉大学",
