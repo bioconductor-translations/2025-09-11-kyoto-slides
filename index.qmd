@@ -39,7 +39,7 @@ execute:
 - 趣味：ジョギング
 :::
 ::: {.column}
-![](../images/joel_nitta_in_field.png){height=350px}
+![](images/joel_nitta_in_field.png){height=350px}
 :::
 :::
 
@@ -73,7 +73,7 @@ execute:
 - 趣味: サーフィン、パン作り
 :::
 ::: {.column}
-![](../images/helper_koki.jpeg){height=350px}
+![](images/helper_koki.jpeg){height=350px}
 :::
 :::
 
