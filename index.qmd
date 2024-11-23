@@ -73,7 +73,7 @@ execute:
 - 趣味: ドライブ
 :::
 ::: {.column}
-![](images/helper_takaki.jpeg){height=350px}
+![](images/helper_takaki.png){height=350px}
 :::
 :::
 
