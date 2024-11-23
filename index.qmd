@@ -60,6 +60,23 @@ execute:
 :::
 :::
 
+## 岡　昂輝（ヘルパー）
+
+::: {.columns}
+::: {.column}
+[`@takakioka`](https://github.com/takakioka)
+
+- 東京農工大学 工学府 生命工学専攻 修士課程
+
+- 研究テーマ: 大規模コホートデータを用いたアルツハイマー病態進行予測に資する代謝物バイオマーカーの探索
+
+- 趣味: ドライブ
+:::
+::: {.column}
+![](images/helper_takaki.jpeg){height=350px}
+:::
+:::
+
 ## 露崎 弘毅（ヘルパー）
 
 ::: {.columns}
