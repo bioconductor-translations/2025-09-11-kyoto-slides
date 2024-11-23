@@ -908,6 +908,105 @@
 </ul></li>
 <li>git はコードの細かな変更を追跡し、共有を可能にします。</li>
 </ul>
+</section></section>
+<section>
+<section id="r-と-rstudio" class="title-slide slide level1 center">
+<h1>R と RStudio</h1>
+
+</section>
+<section id="チャレンジ変数名" class="slide level2">
+<h2>チャレンジ：変数名</h2>
+<p>次の中で有効なRの変数名はどれですか？</p>
+<ul>
+<li>min_height</li>
+<li>max.height</li>
+<li>_age</li>
+<li>.mass</li>
+<li>MaxLength</li>
+<li>min-length</li>
+<li>2widths</li>
+<li>celsius2kelvin</li>
+</ul>
+</section>
+<section id="チャレンジ変数の比較と削除" class="slide level2">
+<h2>チャレンジ：変数の比較と削除</h2>
+<ul>
+<li>次のプログラムの各文の後で、各変数の値はどうなるでしょうか？</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>mass <span class="ot">&lt;-</span> <span class="fl">47.5</span></span>
+<span id="cb7-2"><a></a>age <span class="ot">&lt;-</span> <span class="dv">122</span></span>
+<span id="cb7-3"><a></a>mass <span class="ot">&lt;-</span> mass <span class="sc">*</span> <span class="fl">2.3</span></span>
+<span id="cb7-4"><a></a>age <span class="ot">&lt;-</span> age <span class="sc">-</span> <span class="dv">20</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>上記のコードを実行し、massとageを比較するコマンドを書きましょう。massはageより大きいですか？</p></li>
+<li><p>作業環境を整理し、massとageの変数を削除しましょう。</p></li>
+</ul>
+</section>
+<section id="チャレンジパッケージのインストール" class="slide level2">
+<h2>チャレンジ：パッケージのインストール</h2>
+<p>以下のパッケージをインストールしてみましょう：</p>
+<ul>
+<li>ggplot2</li>
+<li>plyr</li>
+<li>gapminder</li>
+</ul>
+</section>
+<section id="チャレンジプロジェクトの作成" class="slide level2">
+<h2>チャレンジ：プロジェクトの作成</h2>
+<p>RStudio で新しいプロジェクトを作成してみましょう：</p>
+<ol type="1">
+<li>「File」メニューをクリックし、「New Project」を選択します。</li>
+<li>「New Directory」をクリックします。</li>
+<li>「New Project」をクリックします。</li>
+<li>プロジェクトを保存するディレクトリの名前（例：my_project）を入力します。</li>
+<li>「Create a git repository」のチェックボックスが表示される場合は選択します。</li>
+<li>「Create Project」ボタンをクリックします。</li>
+</ol>
+</section>
+<section id="チャレンジプロジェクトの開き方" class="slide level2">
+<h2>チャレンジ：プロジェクトの開き方</h2>
+<p>ファイルシステムを使って RStudio のプロジェクトを開いてみましょう：</p>
+<ol type="1">
+<li>RStudio を終了します。</li>
+<li>先ほどのチャレンジで作成したプロジェクトのディレクトリに移動します。</li>
+<li>そのディレクトリ内の .Rproj ファイルをダブルクリックします。</li>
+</ol>
+</section>
+<section id="チャレンジデータの保存" class="slide level2">
+<h2>チャレンジ：データの保存</h2>
+<p><a href="https://joelnitta.github.io/r-novice-gapminder/data/gapminder_data.csv">このリンク</a>から CSV ファイルをダウンロードしてください。</p>
+<ol type="1">
+<li>ファイルをダウンロードします（上記リンクを右クリック -&gt; 「リンク先を名前を付けて保存」/「名前を付けて保存」、またはリンクをクリックしページが読み込まれた後に Ctrl+S を押すか、メニューの「ファイル」 -&gt; 「ページを名前を付けて保存」を選択）。</li>
+<li><code>gapminder_data.csv</code> という名前で保存されていることを確認します。</li>
+<li>ファイルをプロジェクト内の <code>data/</code> フォルダに保存します。</li>
+</ol>
+<p>後ほどこのデータを読み込み、確認します。</p>
+</section>
+<section id="チャレンジシェルの利用" class="slide level2">
+<h2>チャレンジ：シェルの利用</h2>
+<p>R に読み込む前に、コマンドラインからデータセットについての一般的な情報を得ることは有益です。 これにより、R に読み込む際の判断に役立ちます。コマンドラインシェルを使用して以下の質問に答えてください：</p>
+<ol type="1">
+<li>ファイルのサイズはどれくらいですか？</li>
+<li>このファイルには何行のデータがありますか？</li>
+<li>このファイルにはどのような値が含まれていますか？</li>
+</ol>
+<p>ヒント: RStudio のコンソールペインにある「Terminal」タブを使用すると、RStudio 内で直接コマンドラインを操作できます。</p>
+</section>
+<section id="チャレンジ作業ディレクトリの確認1" class="slide level2">
+<h2>チャレンジ：作業ディレクトリの確認1</h2>
+<p>getwd() コマンドを使用するか、RStudio のメニューを使って現在の作業ディレクトリを確認します。</p>
+<ol type="1">
+<li>コンソールで getwd()（“wd” は “working directory” の略）と入力し、Enter を押します。</li>
+<li>ファイルペインで、data フォルダをダブルクリックして開く（または他の任意のフォルダに移動）。作業ディレクトリに戻るには、ファイルペインの「More」をクリックし、「Go To Working Directory」を選択します。</li>
+</ol>
+</section>
+<section id="チャレンジ作業ディレクトリの確認2" class="slide level2">
+<h2>チャレンジ：作業ディレクトリの確認2</h2>
+<p>setwd() コマンドを使用するか、RStudio のメニューを使って作業ディレクトリを変更します。</p>
+<ol type="1">
+<li>コンソールで setwd(“data”) と入力し、Enter を押します。その後、getwd() と入力して Enter を押し、新しい作業ディレクトリを確認します。</li>
+<li>RStudio ウィンドウ上部のメニューで「Session」をクリックし、「Set Working Directory」を選択して「Choose Directory」をクリックします。その後、開いたウィンドウでプロジェクトディレクトリに戻り、「Open」をクリックします。コンソールに setwd コマンドが自動的に表示されます。</li>
+</ol>
 <!-- FIX ME: Add after receiving feedback
 
 ## よくできたこと

@@ -343,6 +343,69 @@
     "text": "1日目のおさらい\n\nシェルは研究に必要不可欠なスキルです。\n\nオープンソースソフトウェアの活用\nサーバーの操作\ngit の使用にも必須\n\ngit はコードの細かな変更を追跡し、共有を可能にします。"
   },
   {
+    "objectID": "index.html#チャレンジ変数名",
+    "href": "index.html#チャレンジ変数名",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：変数名",
+    "text": "チャレンジ：変数名\n次の中で有効なRの変数名はどれですか？\n\nmin_height\nmax.height\n_age\n.mass\nMaxLength\nmin-length\n2widths\ncelsius2kelvin"
+  },
+  {
+    "objectID": "index.html#チャレンジ変数の比較と削除",
+    "href": "index.html#チャレンジ変数の比較と削除",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：変数の比較と削除",
+    "text": "チャレンジ：変数の比較と削除\n\n次のプログラムの各文の後で、各変数の値はどうなるでしょうか？\n\nmass &lt;- 47.5\nage &lt;- 122\nmass &lt;- mass * 2.3\nage &lt;- age - 20\n\n上記のコードを実行し、massとageを比較するコマンドを書きましょう。massはageより大きいですか？\n作業環境を整理し、massとageの変数を削除しましょう。"
+  },
+  {
+    "objectID": "index.html#チャレンジパッケージのインストール",
+    "href": "index.html#チャレンジパッケージのインストール",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：パッケージのインストール",
+    "text": "チャレンジ：パッケージのインストール\n以下のパッケージをインストールしてみましょう：\n\nggplot2\nplyr\ngapminder"
+  },
+  {
+    "objectID": "index.html#チャレンジプロジェクトの作成",
+    "href": "index.html#チャレンジプロジェクトの作成",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：プロジェクトの作成",
+    "text": "チャレンジ：プロジェクトの作成\nRStudio で新しいプロジェクトを作成してみましょう：\n\n「File」メニューをクリックし、「New Project」を選択します。\n「New Directory」をクリックします。\n「New Project」をクリックします。\nプロジェクトを保存するディレクトリの名前（例：my_project）を入力します。\n「Create a git repository」のチェックボックスが表示される場合は選択します。\n「Create Project」ボタンをクリックします。"
+  },
+  {
+    "objectID": "index.html#チャレンジプロジェクトの開き方",
+    "href": "index.html#チャレンジプロジェクトの開き方",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：プロジェクトの開き方",
+    "text": "チャレンジ：プロジェクトの開き方\nファイルシステムを使って RStudio のプロジェクトを開いてみましょう：\n\nRStudio を終了します。\n先ほどのチャレンジで作成したプロジェクトのディレクトリに移動します。\nそのディレクトリ内の .Rproj ファイルをダブルクリックします。"
+  },
+  {
+    "objectID": "index.html#チャレンジデータの保存",
+    "href": "index.html#チャレンジデータの保存",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：データの保存",
+    "text": "チャレンジ：データの保存\nこのリンクから CSV ファイルをダウンロードしてください。\n\nファイルをダウンロードします（上記リンクを右クリック -&gt; 「リンク先を名前を付けて保存」/「名前を付けて保存」、またはリンクをクリックしページが読み込まれた後に Ctrl+S を押すか、メニューの「ファイル」 -&gt; 「ページを名前を付けて保存」を選択）。\ngapminder_data.csv という名前で保存されていることを確認します。\nファイルをプロジェクト内の data/ フォルダに保存します。\n\n後ほどこのデータを読み込み、確認します。"
+  },
+  {
+    "objectID": "index.html#チャレンジシェルの利用",
+    "href": "index.html#チャレンジシェルの利用",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：シェルの利用",
+    "text": "チャレンジ：シェルの利用\nR に読み込む前に、コマンドラインからデータセットについての一般的な情報を得ることは有益です。 これにより、R に読み込む際の判断に役立ちます。コマンドラインシェルを使用して以下の質問に答えてください：\n\nファイルのサイズはどれくらいですか？\nこのファイルには何行のデータがありますか？\nこのファイルにはどのような値が含まれていますか？\n\nヒント: RStudio のコンソールペインにある「Terminal」タブを使用すると、RStudio 内で直接コマンドラインを操作できます。"
+  },
+  {
+    "objectID": "index.html#チャレンジ作業ディレクトリの確認1",
+    "href": "index.html#チャレンジ作業ディレクトリの確認1",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：作業ディレクトリの確認1",
+    "text": "チャレンジ：作業ディレクトリの確認1\ngetwd() コマンドを使用するか、RStudio のメニューを使って現在の作業ディレクトリを確認します。\n\nコンソールで getwd()（“wd” は “working directory” の略）と入力し、Enter を押します。\nファイルペインで、data フォルダをダブルクリックして開く（または他の任意のフォルダに移動）。作業ディレクトリに戻るには、ファイルペインの「More」をクリックし、「Go To Working Directory」を選択します。"
+  },
+  {
+    "objectID": "index.html#チャレンジ作業ディレクトリの確認2",
+    "href": "index.html#チャレンジ作業ディレクトリの確認2",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：作業ディレクトリの確認2",
+    "text": "チャレンジ：作業ディレクトリの確認2\nsetwd() コマンドを使用するか、RStudio のメニューを使って作業ディレクトリを変更します。\n\nコンソールで setwd(“data”) と入力し、Enter を押します。その後、getwd() と入力して Enter を押し、新しい作業ディレクトリを確認します。\nRStudio ウィンドウ上部のメニューで「Session」をクリックし、「Set Working Directory」を選択して「Choose Directory」をクリックします。その後、開いたウィンドウでプロジェクトディレクトリに戻り、「Open」をクリックします。コンソールに setwd コマンドが自動的に表示されます。"
+  },
+  {
     "objectID": "index.html#集合写真",
     "href": "index.html#集合写真",
     "title": "SWC @ 千葉大学",
