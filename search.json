@@ -476,6 +476,55 @@
     "text": "チャレンジ：データフレームのサブセットへのアクセス\n\nなぜ gapminder[1:20] はエラーを返すのでしょうか？ gapminder[1:20, ] とはどう異なるのでしょうか？\n行 1 から 9 と 19 から 23 のみを含む新しい data.frame を作成し、それを gapminder_small と名付けてください。この操作は 1 ステップまたは 2 ステップで行うことができます。"
   },
   {
+    "objectID": "index.html#チャレンジ",
+    "href": "index.html#チャレンジ",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ",
+    "text": "チャレンジ\n例を修正して、平均寿命が時間とともにどのように変化したかを示す図を作成してください：\nggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) + geom_point()\nヒント：gapminder データセットには “year” という列があり、これを X 軸に表示する必要があります。"
+  },
+  {
+    "objectID": "index.html#チャレンジ-1",
+    "href": "index.html#チャレンジ-1",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ",
+    "text": "チャレンジ\nポイントレイヤーとラインレイヤーの両方を入れてみてください。何が起こるでしょうか？"
+  },
+  {
+    "objectID": "index.html#チャレンジa",
+    "href": "index.html#チャレンジa",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジA",
+    "text": "チャレンジA\n前の例のポイントレイヤーで、ポイントの色とサイズを変更してください。\nヒント：aes 関数を使用しないでください。\nヒント：ポイントに対する linewidth に相当するものは size です。"
+  },
+  {
+    "objectID": "index.html#チャレンジb",
+    "href": "index.html#チャレンジb",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジB",
+    "text": "チャレンジB\nチャレンジA の解答を修正し、ポイントの形状を変更し、大陸ごとに異なる色と新しいトレンドラインを追加してください。\nヒント：color 引数は aes 関数のマッピング内で使用できます。"
+  },
+  {
+    "objectID": "index.html#チャレンジ-2",
+    "href": "index.html#チャレンジ-2",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ",
+    "text": "チャレンジ\n異なる大陸間で利用可能な年における平均寿命を比較するボックスプロットを生成してください。\n応用：\n\nY軸の名前を「Life Expectancy」に変更する。\nX軸のラベルを削除する。"
+  },
+  {
+    "objectID": "index.html#チャレンジggplot2-の出力のファイル保存",
+    "href": "index.html#チャレンジggplot2-の出力のファイル保存",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：ggplot2 の出力のファイル保存",
+    "text": "チャレンジ：ggplot2 の出力のファイル保存\n‘pdf’ コマンドを変更して、PDFの2ページ目を作成し、 同じデータを使って facet_grid を使用して大陸ごとに1つのパネルを表示するプロットを追加してください。"
+  },
+  {
+    "objectID": "index.html#チャレンジデータフレームのサブセットのファイル保存",
+    "href": "index.html#チャレンジデータフレームのサブセットのファイル保存",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ：データフレームのサブセットのファイル保存",
+    "text": "チャレンジ：データフレームのサブセットのファイル保存\ngapminder データを1990年以降に収集されたデータポイントのみを含むようにサブセット化する データクリーニングスクリプトファイルを作成してください。\nこのスクリプトを使用して、新しいサブセットを cleaned-data/ ディレクトリに保存してください。"
+  },
+  {
     "objectID": "index.html#集合写真",
     "href": "index.html#集合写真",
     "title": "SWC @ 千葉大学",

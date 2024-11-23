@@ -1130,6 +1130,50 @@
 <li><p>なぜ <code>gapminder[1:20]</code> はエラーを返すのでしょうか？ <code>gapminder[1:20, ]</code> とはどう異なるのでしょうか？</p></li>
 <li><p>行 1 から 9 と 19 から 23 のみを含む新しい <code>data.frame</code> を作成し、それを <code>gapminder_small</code> と名付けてください。この操作は 1 ステップまたは 2 ステップで行うことができます。</p></li>
 </ol>
+</section></section>
+<section>
+<section id="ggplot2-を使用した出版品質のグラフィック作成" class="title-slide slide level1 center">
+<h1>ggplot2 を使用した出版品質のグラフィック作成</h1>
+
+</section>
+<section id="チャレンジ" class="slide level2">
+<h2>チャレンジ</h2>
+<p>例を修正して、平均寿命が時間とともにどのように変化したかを示す図を作成してください：</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> gapminder, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp)) <span class="sc">+</span> <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>ヒント：<code>gapminder</code> データセットには “year” という列があり、これを X 軸に表示する必要があります。</p>
+</section>
+<section id="チャレンジ-1" class="slide level2">
+<h2>チャレンジ</h2>
+<p>ポイントレイヤーとラインレイヤーの両方を入れてみてください。何が起こるでしょうか？</p>
+</section>
+<section id="チャレンジa" class="slide level2">
+<h2>チャレンジA</h2>
+<p>前の例のポイントレイヤーで、ポイントの色とサイズを変更してください。</p>
+<p>ヒント：<code>aes</code> 関数を使用しないでください。</p>
+<p>ヒント：ポイントに対する <code>linewidth</code> に相当するものは <code>size</code> です。</p>
+</section>
+<section id="チャレンジb" class="slide level2">
+<h2>チャレンジB</h2>
+<p>チャレンジA の解答を修正し、ポイントの形状を変更し、大陸ごとに異なる色と新しいトレンドラインを追加してください。</p>
+<p>ヒント：<code>color</code> 引数は <code>aes</code> 関数のマッピング内で使用できます。</p>
+</section>
+<section id="チャレンジ-2" class="slide level2">
+<h2>チャレンジ</h2>
+<p>異なる大陸間で利用可能な年における平均寿命を比較するボックスプロットを生成してください。</p>
+<p>応用：</p>
+<ul>
+<li>Y軸の名前を「Life Expectancy」に変更する。</li>
+<li>X軸のラベルを削除する。</li>
+</ul>
+</section>
+<section id="チャレンジggplot2-の出力のファイル保存" class="slide level2">
+<h2>チャレンジ：ggplot2 の出力のファイル保存</h2>
+<p>‘pdf’ コマンドを変更して、PDFの2ページ目を作成し、 同じデータを使って <code>facet_grid</code> を使用して大陸ごとに1つのパネルを表示するプロットを追加してください。</p>
+</section>
+<section id="チャレンジデータフレームのサブセットのファイル保存" class="slide level2">
+<h2>チャレンジ：データフレームのサブセットのファイル保存</h2>
+<p><code>gapminder</code> データを1990年以降に収集されたデータポイントのみを含むようにサブセット化する データクリーニングスクリプトファイルを作成してください。</p>
+<p>このスクリプトを使用して、新しいサブセットを <code>cleaned-data/</code> ディレクトリに保存してください。</p>
 <!-- FIX ME: Add after receiving feedback
 
 ## よくできたこと
