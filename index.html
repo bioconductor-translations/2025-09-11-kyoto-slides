@@ -1007,6 +1007,129 @@
 <li>コンソールで setwd(“data”) と入力し、Enter を押します。その後、getwd() と入力して Enter を押し、新しい作業ディレクトリを確認します。</li>
 <li>RStudio ウィンドウ上部のメニューで「Session」をクリックし、「Set Working Directory」を選択して「Choose Directory」をクリックします。その後、開いたウィンドウでプロジェクトディレクトリに戻り、「Open」をクリックします。コンソールに setwd コマンドが自動的に表示されます。</li>
 </ol>
+</section></section>
+<section>
+<section id="r-のデータ構造とデータフレーム" class="title-slide slide level1 center">
+<h1>R のデータ構造とデータフレーム</h1>
+
+</section>
+<section id="チャレンジデータフレームから変数観測値要素を取得する" class="slide level2">
+<h2>チャレンジ：データフレームから変数、観測値、要素を取得する</h2>
+<p>下記の例を試して、それぞれが何を返すのかを説明してください。</p>
+<ul>
+<li>cats[1]</li>
+<li>cats[[1]]</li>
+<li>cats$coat</li>
+<li>cats[“coat”]</li>
+<li>cats[1, 1]</li>
+<li>cats[, 1]</li>
+<li>cats[1, ]</li>
+</ul>
+<p>ヒント: 返されるものを調べるには、typeof() 関数を使用してください。</p>
+</section>
+<section id="チャレンジデータフレームの作成" class="slide level2">
+<h2>チャレンジ：データフレームの作成</h2>
+<p>次の構文を使用して、新しいデータフレームを R 内で作成できます：</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>),</span>
+<span id="cb8-2"><a></a>                 <span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>,</span>
+<span id="cb8-3"><a></a>                 <span class="at">y =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>以下の情報を持つデータフレームを作成してください：</p>
+<ul>
+<li>名</li>
+<li>姓</li>
+<li>ラッキーナンバー</li>
+</ul>
+<p>次に、rbind を使用して隣の人のエントリを追加しましょう。 最後に、cbind を使用して「コーヒーブレイクの時間ですか？」という質問への各人の回答を含む列を追加してください。</p>
+</section>
+<section id="チャレンジデータフレームの確認" class="slide level2">
+<h2>チャレンジ：データフレームの確認</h2>
+<p>データの最後の数行や中間のいくつかの行も確認するのが良い習慣です。これをどのように行いますか？</p>
+<p>特に中間の行を探すのは難しくありませんが、ランダムな行をいくつか取得することもできます。これをどのようにコード化しますか？</p>
+</section>
+<section id="チャレンジ再現性のある分析のためのコードの保存と再利用" class="slide level2">
+<h2>チャレンジ：再現性のある分析のためのコードの保存と再利用</h2>
+<p>File -&gt; New File -&gt; R Script に移動し、<code>gapminder</code> データセットを読み込むための R スクリプトを作成します。このスクリプトを <code>scripts/</code> ディレクトリに保存し、バージョン管理に追加してください。</p>
+<p>その後、<code>source</code> 関数を使用してスクリプトを実行します。ファイルパスを引数として指定するか、RStudio の「Source」ボタンを押します。</p>
+</section></section>
+<section>
+<section id="データの部分集合化" class="title-slide slide level1 center">
+<h1>データの部分集合化</h1>
+
+</section>
+<section id="チャレンジデータの部分の取得" class="slide level2">
+<h2>チャレンジ：データの部分の取得</h2>
+<p>次のコードが与えられた場合：</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span>)</span>
+<span id="cb9-2"><a></a><span class="fu">names</span>(x) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>)</span>
+<span id="cb9-3"><a></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>a   b   c   d   e
+5.4 6.2 7.1 4.8 7.5 </code></pre>
+<p>次の出力を生成する少なくとも 2 つの異なるコマンドを考え出してください：</p>
+<pre><code> b   c   d
+6.2 7.1 4.8 </code></pre>
+<p>2 つの異なるコマンドを見つけたら、隣の人と比較してみてください。異なる戦略を持っていましたか？</p>
+</section>
+<section id="チャレンジ条件を満たす部分の取得" class="slide level2">
+<h2>チャレンジ：条件を満たす部分の取得</h2>
+<p>以下のコードを用いて：</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span>)</span>
+<span id="cb12-2"><a></a><span class="fu">names</span>(x) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>)</span>
+<span id="cb12-3"><a></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code> a   b   c   d   e
+5.4 6.2 7.1 4.8 7.5 </code></pre>
+<p><code>x</code> から 4 より大きく 7 未満の値を返すサブセットコマンドを書いてください。</p>
+</section>
+<section id="チャレンジデータを抽出するための論理ベクトルの作成1" class="slide level2">
+<h2>チャレンジ：データを抽出するための論理ベクトルの作成1</h2>
+<p>ベクトルの要素を、特定のリスト内のいずれかと一致させる操作は、データ解析で非常に一般的なタスクです。 例えば、<code>gapminder</code> データセットには <code>country</code> と <code>continent</code> の変数がありますが、これらの間の情報は含まれていません。 東南アジアの情報を抽出したいとします。このとき、どのようにして東南アジアのすべての国について <code>TRUE</code>、それ以外を <code>FALSE</code> とする論理ベクトルを作成しますか？</p>
+<p>以下のデータを使用します：</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>seAsia <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Myanmar"</span>,<span class="st">"Thailand"</span>,<span class="st">"Cambodia"</span>,<span class="st">"Vietnam"</span>,<span class="st">"Laos"</span>)</span>
+<span id="cb14-2"><a></a><span class="do">## エピソード2でダウンロードした gapminder データを読み込む</span></span>
+<span id="cb14-3"><a></a>gapminder <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/gapminder_data.csv"</span>, <span class="at">header=</span><span class="cn">TRUE</span>)</span>
+<span id="cb14-4"><a></a><span class="do">## データフレームから `country` 列を抽出（詳細は後述）；</span></span>
+<span id="cb14-5"><a></a><span class="do">## factor を文字列に変換；</span></span>
+<span id="cb14-6"><a></a><span class="do">## 重複しない要素のみ取得</span></span>
+<span id="cb14-7"><a></a>countries <span class="ot">&lt;-</span> <span class="fu">unique</span>(<span class="fu">as.character</span>(gapminder<span class="sc">$</span>country))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="チャレンジデータを抽出するための論理ベクトルの作成2" class="slide level2">
+<h2>チャレンジ：データを抽出するための論理ベクトルの作成2</h2>
+<p>以下の3つの方法を試し、それぞれがどのように（正しくない、または正しい方法で）動作するのか説明してください：</p>
+<ol type="1">
+<li>間違った方法（<code>==</code> のみを使用）</li>
+<li>不格好な方法（論理演算子 <code>==</code> と <code>|</code> を使用）</li>
+<li>エレガントな方法（<code>%in%</code> を使用）</li>
+</ol>
+</section>
+<section id="チャレンジデータフレームサブセットエラーの修正" class="slide level2">
+<h2>チャレンジ：データフレームサブセットエラーの修正</h2>
+<p>以下の一般的なデータフレームサブセットエラーを修正してください：</p>
+<ol type="1">
+<li>年 1957 の観測値を抽出する</li>
+</ol>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>gapminder[gapminder<span class="sc">$</span>year <span class="ot">=</span> <span class="dv">1957</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>1列目から4列目以外のすべての列を抽出する</li>
+</ol>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>gapminder[,<span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>寿命が80年以上の行を抽出する</li>
+</ol>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>gapminder[gapminder<span class="sc">$</span>lifeExp <span class="sc">&gt;</span> <span class="dv">80</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>1行目と4列目、5列目（<code>continent</code> と <code>lifeExp</code>）を抽出する</li>
+</ol>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>gapminder[<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="5" type="1">
+<li>応用：年 2002 年と 2007 年の情報を含む行を抽出する</li>
+</ol>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>gapminder[gapminder<span class="sc">$</span>year <span class="sc">==</span> <span class="dv">2002</span> <span class="sc">|</span> <span class="dv">2007</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="チャレンジデータフレームのサブセットへのアクセス" class="slide level2">
+<h2>チャレンジ：データフレームのサブセットへのアクセス</h2>
+<ol type="1">
+<li><p>なぜ <code>gapminder[1:20]</code> はエラーを返すのでしょうか？ <code>gapminder[1:20, ]</code> とはどう異なるのでしょうか？</p></li>
+<li><p>行 1 から 9 と 19 から 23 のみを含む新しい <code>data.frame</code> を作成し、それを <code>gapminder_small</code> と名付けてください。この操作は 1 ステップまたは 2 ステップで行うことができます。</p></li>
+</ol>
 <!-- FIX ME: Add after receiving feedback
 
 ## よくできたこと
