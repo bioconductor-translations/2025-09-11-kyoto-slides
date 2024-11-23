@@ -533,6 +533,269 @@ git pull origin main
 
 - git はコードの細かな変更を追跡し、共有を可能にします。
 
+# git におけるコンフリクトの解決
+
+## 質問と目的
+
+質問
+
+- 自分の変更が他の人の変更とコンフリクトする場合はどうすればいいですか?
+
+目的
+
+- コンフリクトとは何か、いつ発生する可能性があるかを説明します。
+- マージによって生じる競合を解決します。
+
+## コンフリクトを作る (コラボレーターが編集)
+
+コラボレーターの方にだけ 1 行追加してみましょう。
+
+``` bash
+$ nano mars.txt
+$ cat mars.txt
+```
+
+```
+Cold and dry, but everything is my favorite color
+The two moons may be a problem for Wolfman
+But the Mummy will appreciate the lack of humidity
+This line added to Wolfman's copy
+```
+
+## コンフリクトを作る (コラボレーターがコミット)
+
+コラボレーターの方で変更をコミットします。
+
+``` bash
+$ git add mars.txt
+$ git commit -m "Add a line in our home copy"
+```
+
+```
+[main 5ae9631] Add a line in our home copy
+ 1 file changed, 1 insertion(+)
+```
+
+## コンフリクトを作る (コラボレーターがプッシュ)
+
+コラボレーターの方でコミットを GitHub にプッシュします。
+
+``` bash
+$ git push origin main
+```
+
+```
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 331 bytes | 331.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/vlad/planets.git
+   29aba7c..dabb4c8  main -> main
+```
+
+## コンフリクトを作る (オーナーが編集)
+
+オーナーが GitHub から pull せずに、自分のコピーに「別の」変更を加えてもらいます。
+
+``` bash
+$ nano mars.txt
+$ cat mars.txt
+```
+
+```
+Cold and dry, but everything is my favorite color
+The two moons may be a problem for Wolfman
+But the Mummy will appreciate the lack of humidity
+We added a different line in the other copy
+```
+
+## コンフリクトを作る (オーナーがコミット)
+
+オーナーは変更をローカルにコミットできます:
+
+``` bash
+$ git add mars.txt
+$ git commit -m "Add a line in my copy"
+```
+
+```
+[main 07ebc69] Add a line in my copy
+ 1 file changed, 1 insertion(+)
+```
+
+## コンフリクトを作る (オーナーがプッシュ「できない」)
+
+しかし、オーナーは Git で GitHub にプッシュできません。
+
+``` bash
+$ git push origin main
+```
+
+```
+To https://github.com/vlad/planets.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/vlad/planets.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+## コンフリクトのイメージ
+
+![](https://swcarpentry-ja.github.io/git-novice/fig/conflict.svg)
+
+Git は、リモート リポジトリにローカル ブランチに組み込まれていない新しい更新があることを検出したため、プッシュを拒否しました。
+
+## コンフリクトの解決 (オーナーが git pull する)
+
+必要なのは、GitHub から変更を pull し、現在作業中のコピーにマージしてからプッシュすることです。
+まずは pull から始めましょう:
+
+``` bash
+$ git pull origin main
+```
+
+```
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/vlad/planets
+ * branch            main     -> FETCH_HEAD
+    29aba7c..dabb4c8  main     -> origin/main
+Auto-merging mars.txt
+CONFLICT (content): Merge conflict in mars.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+## コンフリクトの解決 (拒否されたマージの結果)
+
+git pullコマンドは、ローカル リポジトリを更新して、リモート リポジトリにすでに含まれている変更を組み込みます。
+リモート ブランチからの変更が取得された後、Git はローカル コピーに加えられた変更がリモート リポジトリに加えられた変更と重複していることを検出し、
+以前の作業が損なわれないように 2 つのバージョンのマージを拒否します。
+コンフリクトは、影響を受けるファイルで下記のようにマークされます。
+
+``` bash
+$ cat mars.txt
+```
+
+```
+Cold and dry, but everything is my favorite color
+The two moons may be a problem for Wolfman
+But the Mummy will appreciate the lack of humidity
+<<<<<<< HEAD
+We added a different line in the other copy
+=======
+This line added to Wolfman's copy
+>>>>>>> dabb4c8c450e8475aee9b14b4383acc99f42af1d
+```
+
+## コンフリクトの解決 (マーカーを削除し、変更を調整する)
+
+このファイルを編集して、これらのマーカーを削除し、変更を調整するのは私たちの仕事です。
+ローカル リポジトリでの変更を維持するか、リモート リポジトリでの変更を維持するか、両方を置き換える新しいものを書き込むか、変更を完全に削除するか、何でも好きなように行うことができます。
+両方を置き換えて、ファイルを次のようにしてみましょう。
+
+```
+Cold and dry, but everything is my favorite color
+The two moons may be a problem for Wolfman
+But the Mummy will appreciate the lack of humidity
+We removed the conflict on this line
+```
+
+## コンフリクトの解決 (マージを完了するために変更をコミットする)
+
+``` bash
+$ git add mars.txt
+$ git status
+```
+
+```
+On branch main
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	modified:   mars.txt
+```
+
+``` bash
+$ git commit -m "Merge changes from GitHub"
+```
+
+```
+[main 2abf2b1] Merge changes from GitHub
+```
+
+## コンフリクトの解決 (ついに push してコンフリクトを解決)
+
+``` bash
+$ git push origin main
+```
+
+```
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 645 bytes | 645.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/vlad/planets.git
+   dabb4c8..2abf2b1  main -> main
+```
+
+## コンフリクトの解決 (今度はコラボレーターが pull する)
+
+Git は何を何とマージしたかを追跡しているので、最初の変更を行ったコラボレーターが pull したときに、再度手作業で修正する必要がありません。
+今度はコラボレーターが pull してください
+
+``` bash
+$ git pull origin main
+```
+
+```
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/vlad/planets
+ * branch            main     -> FETCH_HEAD
+    dabb4c8..2abf2b1  main     -> origin/main
+Updating dabb4c8..2abf2b1
+Fast-forward
+ mars.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+## コンフリクトの解決 (コラボレーターがオーナーにマージされた内容を確認)
+
+コラボレーターはオーナーにマージされた内容を確認してみましょう
+
+``` bash
+$ cat mars.txt
+```
+
+```
+Cold and dry, but everything is my favorite color
+The two moons may be a problem for Wolfman
+But the Mummy will appreciate the lack of humidity
+We removed the conflict on this line
+```
+
+## コンフリクトの解決のまとめ
+
+- 2 人以上の人が同じファイルの同じ行を変更すると、競合が発生します。
+- バージョン管理システムでは、ユーザーが互いの変更を盲目的に上書きすることは許可されませんが、競合が強調表示されるので、解決できます。
+
 # R と RStudio
 
 ## チャレンジ：変数名
