@@ -434,6 +434,14 @@ fructose.dat    sucrose.dat
 
 ![](https://swcarpentry-ja.github.io/git-novice/fig/motivatingexample.png)
 
+## ステージング・エリア
+
+![](https://swcarpentry.github.io/git-novice/fig/git-staging-area.svg)
+
+## ステージング・エリア
+
+![](https://swcarpentry.github.io/git-novice/fig/git-committing.svg)
+
 ## チャレンジ： コミットメッセージを決める
 
 以下のコミットメッセージの内、最後の `mars.txt` のコミットに最適なメッセージはどれでしょう？
@@ -467,6 +475,10 @@ fructose.dat    sucrose.dat
 4. ```bash
    $ git commit -m myfile.txt "my recent changes"
    ```
+
+## `HEAD~1`の意味
+
+![](https://swcarpentry.github.io/git-novice/fig/git-restore.svg)
 
 ## チャレンジ： ファイルの復元 {.smaller}
 
