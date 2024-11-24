@@ -674,7 +674,7 @@ CONFLICT (content): Merge conflict in mars.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-## コンフリクトの解決 (拒否されたマージの結果)
+## コンフリクトの解決 (拒否されたマージの結果) {.smaller}
 
 git pullコマンドは、ローカル リポジトリを更新して、リモート リポジトリにすでに含まれている変更を組み込みます。
 リモート ブランチからの変更が取得された後、Git はローカル コピーに加えられた変更がリモート リポジトリに加えられた変更と重複していることを検出し、
@@ -709,7 +709,7 @@ But the Mummy will appreciate the lack of humidity
 We removed the conflict on this line
 ```
 
-## コンフリクトの解決 (マージを完了するために変更をコミットする)
+## コンフリクトの解決 (マージを完了するために変更をコミットする) {.smaller}
 
 ``` bash
 $ git add mars.txt
@@ -752,7 +752,7 @@ To https://github.com/vlad/planets.git
    dabb4c8..2abf2b1  main -> main
 ```
 
-## コンフリクトの解決 (今度はコラボレーターが pull する)
+## コンフリクトの解決 (今度はコラボレーターが pull する) {.smaller}
 
 Git は何を何とマージしたかを追跡しているので、最初の変更を行ったコラボレーターが pull したときに、再度手作業で修正する必要がありません。
 今度はコラボレーターが pull してください
@@ -776,7 +776,7 @@ Fast-forward
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
-## コンフリクトの解決 (コラボレーターがオーナーにマージされた内容を確認)
+## コンフリクトの解決 (コラボレーターがオーナーにマージされた内容を確認) {.smaller}
 
 コラボレーターはオーナーにマージされた内容を確認してみましょう
 
@@ -853,9 +853,9 @@ RStudio で新しいプロジェクトを作成してみましょう：
 2. 先ほどのチャレンジで作成したプロジェクトのディレクトリに移動します。
 3. そのディレクトリ内の .Rproj ファイルをダブルクリックします。
 
-## チャレンジ：データの保存
+## チャレンジ：データの保存 {.smaller}
 
-[このリンク](https://joelnitta.github.io/r-novice-gapminder/data/gapminder_data.csv)から CSV ファイルをダウンロードしてください。
+[このリンク](https://swcarpentry-ja.github.io/r-novice-gapminder/data/gapminder_data.csv)から CSV ファイルをダウンロードしてください。
 
 1. ファイルをダウンロードします（上記リンクを右クリック -> 「リンク先を名前を付けて保存」/「名前を付けて保存」、またはリンクをクリックしページが読み込まれた後に Ctrl+S を押すか、メニューの「ファイル」 -> 「ページを名前を付けて保存」を選択）。
 2. `gapminder_data.csv` という名前で保存されていることを確認します。
@@ -881,7 +881,7 @@ getwd() コマンドを使用するか、RStudio のメニューを使って現�
 1. コンソールで getwd()（“wd” は “working directory” の略）と入力し、Enter を押します。
 2. ファイルペインで、data フォルダをダブルクリックして開く（または他の任意のフォルダに移動）。作業ディレクトリに戻るには、ファイルペインの「More」をクリックし、「Go To Working Directory」を選択します。
 
-## チャレンジ：作業ディレクトリの確認2
+## チャレンジ：作業ディレクトリの確認2 {.smaller}
 
 setwd() コマンドを使用するか、RStudio のメニューを使って作業ディレクトリを変更します。
 
@@ -890,7 +890,7 @@ setwd() コマンドを使用するか、RStudio のメニューを使って作�
 
 # R のデータ構造とデータフレーム
 
-## チャレンジ：データフレームから変数、観測値、要素を取得する
+## チャレンジ：データフレームから変数、観測値、要素を取得する {.smaller}
 
 下記の例を試して、それぞれが何を返すのかを説明してください。
 
@@ -904,7 +904,7 @@ setwd() コマンドを使用するか、RStudio のメニューを使って作�
 
 ヒント: 返されるものを調べるには、typeof() 関数を使用してください。
 
-## チャレンジ：データフレームの作成
+## チャレンジ：データフレームの作成 {.smaller}
 
 次の構文を使用して、新しいデータフレームを R 内で作成できます：
 
@@ -937,7 +937,7 @@ File -> New File -> R Script に移動し、`gapminder` データセットを読
 
 # データの部分集合化
 
-## チャレンジ：データの部分の取得
+## チャレンジ：データの部分の取得 {.smaller}
 
 次のコードが与えられた場合：
 
@@ -975,7 +975,7 @@ print(x)
 
 `x` から 4 より大きく 7 未満の値を返すサブセットコマンドを書いてください。
 
-## チャレンジ：データを抽出するための論理ベクトルの作成1
+## チャレンジ：データを抽出するための論理ベクトルの作成1 {.smaller}
 
 ベクトルの要素を、特定のリスト内のいずれかと一致させる操作は、データ解析で非常に一般的なタスクです。
 例えば、`gapminder` データセットには `country` と `continent` の変数がありますが、これらの間の情報は含まれていません。
@@ -1001,7 +1001,7 @@ countries <- unique(as.character(gapminder$country))
 2. 不格好な方法（論理演算子 `==` と `|` を使用）
 3. エレガントな方法（`%in%` を使用）
 
-## チャレンジ：データフレームサブセットエラーの修正
+## チャレンジ：データフレームサブセットエラーの修正 {.smaller}
 
 以下の一般的なデータフレームサブセットエラーを修正してください：
 
@@ -1042,9 +1042,16 @@ gapminder[gapminder$year == 2002 | 2007,]
 
 例を修正して、平均寿命が時間とともにどのように変化したかを示す図を作成してください：
 
+::: {.medium}
+
 ``` r
-ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) + geom_point()
+ggplot(
+  data = gapminder,
+  mapping = aes(x = gdpPercap, y = lifeExp)) +
+  geom_point()
 ```
+
+:::
 
 ヒント：`gapminder` データセットには “year” という列があり、これを X 軸に表示する必要があります。
 
@@ -1098,5 +1105,3 @@ ggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) + geom_point
 - 「公開しても大丈夫」という方は、ぜひご協力ください。
 
 - 後ろから撮影した集合写真を公開する場合があります。もし公開を希望されない場合は、お知らせください。
-
-<https://swcarpentry-ja.github.io/2024-05-30-chiba/>
