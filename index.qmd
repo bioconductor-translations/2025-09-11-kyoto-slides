@@ -356,6 +356,71 @@ pnas_sub/ pnas_final/ original/
 :::
 ::::
 
+##  チャレンジ: ファイルの移動 {.smaller}
+
+以下のコマンドシーケンスで、最後のlsコマンドの出力はどうなりますか？
+
+``` bash
+$ pwd
+```
+
+```
+/Users/jamie/data
+```
+
+``` bash
+$ ls
+```
+
+```
+proteins.dat
+```
+
+``` bash
+$ mkdir recombined
+$ mv proteins.dat recombined/
+$ cp recombined/proteins.dat ../proteins-saved.dat
+$ ls
+```
+
+1. `proteins-saved.dat` `recombined`
+
+1. `recombined`
+
+1. `proteins.dat` `recombined`
+
+1. `proteins-saved.dat`
+
+## チャレンジ: ファイルの整理 {.smaller}
+
+Jamieはプロジェクトに取り組んでいますが、ファイルがあまり整理されていないことに気づきました：
+
+``` bash
+$ ls -F
+```
+
+```
+analyzed/  fructose.dat    raw/   sucrose.dat
+```
+
+`fructose.dat`と`sucrose.dat`のファイルはデータ解析の出力を含んでいます。 以下のコマンドが示す出力を得るために、Jamieはどのコマンドを実行する必要がありますか？
+
+``` bash
+$ ls -F
+```
+
+```
+analyzed/   raw/
+```
+
+``` bash
+$ ls analyzed
+```
+
+```
+fructose.dat    sucrose.dat
+```
+
 # Git
 
 ## なぜGitを使うのか？
@@ -364,6 +429,60 @@ pnas_sub/ pnas_final/ original/
 - MS Wordの「変更履歴の追跡」機能に似ています。
 - コードが「壊れた」時に巻き戻せます。
 - コードの共有や共同作業を簡単にします。
+
+## ストーリー
+
+![](https://swcarpentry-ja.github.io/git-novice/fig/motivatingexample.png)
+
+## チャレンジ： コミットメッセージを決める
+
+以下のコミットメッセージの内、最後の `mars.txt` のコミットに最適なメッセージはどれでしょう？
+
+1. “Changes”
+1. “Added line ‘But the Mummy will appreciate the lack of humidity’ to mars.txt”
+1. “Discuss effects of Mars’ climate on the Mummy”
+
+## チャレンジ： `bio` リポジトリ
+
+- `bio` という Git リポジトリ新しく作りましょう。
+- `me.txt` というファイルに自分について３文書いて、変更点をコミットしてください。
+- すでに書いた文章の内、ひとつだけ編集して、更にもう一文加えてください。
+- 編集した後の状態とその前の違いを表示してください。
+
+## チャレンジ： 変更点をコミットする {.smaller}
+
+以下の内、`myfile.txt` を Git リポジトリに保存するためのコマンドはどれでしょう？
+
+1. ```bash
+   $ git commit -m "my recent changes"
+   ```
+2. ```bash
+   $ git init myfile.txt
+   $ git commit -m "my recent changes"
+   ```
+3. ```bash
+   $ git add myfile.txt
+   $ git commit -m "my recent changes"
+   ```
+4. ```bash
+   $ git commit -m myfile.txt "my recent changes"
+   ```
+
+## チャレンジ： ファイルの復元 {.smaller}
+
+ジェニファーは、数週間取り組んできたPythonスクリプトに変更を加えました。そして今朝行った変更により、スクリプトが "壊れ"、動作しなくなりました。 彼女はそれを修正しようとして約1時間費やしましたが、うまく機能しません...
+
+幸い、彼女はGitを使用してプロジェクトのバージョンを追跡していました! 以下のどのコマンドで、`data_cruncher.py` と呼ばれるPythonスクリプトの最後にコミットされたバージョンを復元できるでしょうか？
+
+1. `$ git restore`
+
+2. `$ git restore data_cruncher.py`
+
+3. `$ git restore -s HEAD~1 data_cruncher.py`
+
+4. `$ git restore -s <最後のコミットのID> data_cruncher.py`
+
+5. 2番と4番の両方
 
 ## チャレンジ：埋もれたファイルを無視する
 
@@ -376,7 +495,7 @@ results/plots
 
 `results/data`ではなく、`results/plots`のみを無視するにはどうすればよいでしょう？
 
-## チャレンジ：ログファイル {.smaller}
+## チャレンジ： ログファイル {.smaller}
 
 仮に `log_01`、`log_02`、`log_03`といった中間ログファイルを作成するスクリプトを書いたとします。 これらのログファイルは保存しておきたいものの、gitで追跡したくありません。
 
