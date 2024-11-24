@@ -224,6 +224,20 @@
     "text": "ストーリー"
   },
   {
+    "objectID": "index.html#ステージングエリア",
+    "href": "index.html#ステージングエリア",
+    "title": "SWC @ 千葉大学",
+    "section": "ステージング・エリア",
+    "text": "ステージング・エリア"
+  },
+  {
+    "objectID": "index.html#ステージングエリア-1",
+    "href": "index.html#ステージングエリア-1",
+    "title": "SWC @ 千葉大学",
+    "section": "ステージング・エリア",
+    "text": "ステージング・エリア"
+  },
+  {
     "objectID": "index.html#チャレンジ-コミットメッセージを決める",
     "href": "index.html#チャレンジ-コミットメッセージを決める",
     "title": "SWC @ 千葉大学",
@@ -243,6 +257,13 @@
     "title": "SWC @ 千葉大学",
     "section": "チャレンジ： 変更点をコミットする",
     "text": "チャレンジ： 変更点をコミットする\n以下の内、myfile.txt を Git リポジトリに保存するためのコマンドはどれでしょう？\n\n   $ git commit -m \"my recent changes\"\n   $ git init myfile.txt\n   $ git commit -m \"my recent changes\"\n   $ git add myfile.txt\n   $ git commit -m \"my recent changes\"\n   $ git commit -m myfile.txt \"my recent changes\""
+  },
+  {
+    "objectID": "index.html#head1の意味",
+    "href": "index.html#head1の意味",
+    "title": "SWC @ 千葉大学",
+    "section": "HEAD~1の意味",
+    "text": "HEAD~1の意味"
   },
   {
     "objectID": "index.html#チャレンジ-ファイルの復元",
