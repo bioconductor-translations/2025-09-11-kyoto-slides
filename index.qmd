@@ -561,7 +561,6 @@ The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
 This line added to Wolfman's copy
 ```
-
 ## コンフリクトを作る (コラボレーターがコミット)
 
 コラボレーターの方で変更をコミットします。
@@ -576,7 +575,7 @@ $ git commit -m "Add a line in our home copy"
  1 file changed, 1 insertion(+)
 ```
 
-## コンフリクトを作る (コラボレーターがプッシュ)
+## コンフリクトを作る (コラボレーターがプッシュ) {.smaller}
 
 コラボレーターの方でコミットを GitHub にプッシュします。
 
@@ -626,7 +625,7 @@ $ git commit -m "Add a line in my copy"
  1 file changed, 1 insertion(+)
 ```
 
-## コンフリクトを作る (オーナーがプッシュ「できない」)
+## コンフリクトを作る (オーナーがプッシュ「できない」) {.smaller}
 
 しかし、オーナーは Git で GitHub にプッシュできません。
 
@@ -651,7 +650,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 Git は、リモート リポジトリにローカル ブランチに組み込まれていない新しい更新があることを検出したため、プッシュを拒否しました。
 
-## コンフリクトの解決 (オーナーが git pull する)
+## コンフリクトの解決 (オーナーが git pull する) {.smaller}
 
 必要なのは、GitHub から変更を pull し、現在作業中のコピーにマージしてからプッシュすることです。
 まずは pull から始めましょう:
@@ -734,7 +733,7 @@ $ git commit -m "Merge changes from GitHub"
 [main 2abf2b1] Merge changes from GitHub
 ```
 
-## コンフリクトの解決 (ついに push してコンフリクトを解決)
+## コンフリクトの解決 (ついに push してコンフリクトを解決) {.smaller}
 
 ``` bash
 $ git push origin main
@@ -834,7 +833,7 @@ age <- age - 20
 - plyr
 - gapminder
 
-## チャレンジ：プロジェクトの作成
+## チャレンジ：プロジェクトの作成 {.smaller}
 
 RStudio で新しいプロジェクトを作成してみましょう：
 
