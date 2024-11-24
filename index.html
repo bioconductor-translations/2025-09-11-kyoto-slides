@@ -720,6 +720,35 @@
 </div><div class="column" style="width:50%;">
 <p><img data-src="https://swcarpentry.github.io/shell-novice/fig/filesystem-challenge.svg"></p>
 </div></div>
+</section>
+<section id="チャレンジ-ファイルの移動" class="slide level2 smaller">
+<h2>チャレンジ: ファイルの移動</h2>
+<p>以下のコマンドシーケンスで、最後のlsコマンドの出力はどうなりますか？</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">$</span> pwd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>/Users/jamie/data</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a></a><span class="ex">$</span> ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>proteins.dat</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="ex">$</span> mkdir recombined</span>
+<span id="cb6-2"><a></a><span class="ex">$</span> mv proteins.dat recombined/</span>
+<span id="cb6-3"><a></a><span class="ex">$</span> cp recombined/proteins.dat ../proteins-saved.dat</span>
+<span id="cb6-4"><a></a><span class="ex">$</span> ls</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li><p><code>proteins-saved.dat</code> <code>recombined</code></p></li>
+<li><p><code>recombined</code></p></li>
+<li><p><code>proteins.dat</code> <code>recombined</code></p></li>
+<li><p><code>proteins-saved.dat</code></p></li>
+</ol>
+</section>
+<section id="チャレンジ-ファイルの整理" class="slide level2 smaller">
+<h2>チャレンジ: ファイルの整理</h2>
+<p>Jamieはプロジェクトに取り組んでいますが、ファイルがあまり整理されていないことに気づきました：</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="ex">$</span> ls <span class="at">-F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>analyzed/  fructose.dat    raw/   sucrose.dat</code></pre>
+<p><code>fructose.dat</code>と<code>sucrose.dat</code>のファイルはデータ解析の出力を含んでいます。 以下のコマンドが示す出力を得るために、Jamieはどのコマンドを実行する必要がありますか？</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="ex">$</span> ls <span class="at">-F</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>analyzed/   raw/</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="ex">$</span> ls analyzed</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>fructose.dat    sucrose.dat</code></pre>
 </section></section>
 <section>
 <section id="git" class="title-slide slide level1 center">
@@ -735,15 +764,61 @@
 <li>コードの共有や共同作業を簡単にします。</li>
 </ul>
 </section>
+<section id="ストーリー" class="slide level2">
+<h2>ストーリー</h2>
+
+<img data-src="https://swcarpentry-ja.github.io/git-novice/fig/motivatingexample.png" class="r-stretch"></section>
+<section id="チャレンジ-コミットメッセージを決める" class="slide level2">
+<h2>チャレンジ： コミットメッセージを決める</h2>
+<p>以下のコミットメッセージの内、最後の <code>mars.txt</code> のコミットに最適なメッセージはどれでしょう？</p>
+<ol type="1">
+<li>“Changes”</li>
+<li>“Added line ‘But the Mummy will appreciate the lack of humidity’ to mars.txt”</li>
+<li>“Discuss effects of Mars’ climate on the Mummy”</li>
+</ol>
+</section>
+<section id="チャレンジ-bio-リポジトリ" class="slide level2">
+<h2>チャレンジ： <code>bio</code> リポジトリ</h2>
+<ul>
+<li><code>bio</code> という Git リポジトリ新しく作りましょう。</li>
+<li><code>me.txt</code> というファイルに自分について３文書いて、変更点をコミットしてください。</li>
+<li>すでに書いた文章の内、ひとつだけ編集して、更にもう一文加えてください。</li>
+<li>編集した後の状態とその前の違いを表示してください。</li>
+</ul>
+</section>
+<section id="チャレンジ-変更点をコミットする" class="slide level2 smaller">
+<h2>チャレンジ： 変更点をコミットする</h2>
+<p>以下の内、<code>myfile.txt</code> を Git リポジトリに保存するためのコマンドはどれでしょう？</p>
+<ol type="1">
+<li><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a></a>   <span class="ex">$</span> git init myfile.txt</span>
+<span id="cb14-2"><a></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a></a>   <span class="ex">$</span> git add myfile.txt</span>
+<span id="cb15-2"><a></a>   <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"my recent changes"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a></a>   <span class="ex">$</span> git commit <span class="at">-m</span> myfile.txt <span class="st">"my recent changes"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+<section id="チャレンジ-ファイルの復元" class="slide level2 smaller">
+<h2>チャレンジ： ファイルの復元</h2>
+<p>ジェニファーは、数週間取り組んできたPythonスクリプトに変更を加えました。そして今朝行った変更により、スクリプトが “壊れ”、動作しなくなりました。 彼女はそれを修正しようとして約1時間費やしましたが、うまく機能しません…</p>
+<p>幸い、彼女はGitを使用してプロジェクトのバージョンを追跡していました! 以下のどのコマンドで、<code>data_cruncher.py</code> と呼ばれるPythonスクリプトの最後にコミットされたバージョンを復元できるでしょうか？</p>
+<ol type="1">
+<li><p><code>$ git restore</code></p></li>
+<li><p><code>$ git restore data_cruncher.py</code></p></li>
+<li><p><code>$ git restore -s HEAD~1 data_cruncher.py</code></p></li>
+<li><p><code>$ git restore -s &lt;最後のコミットのID&gt; data_cruncher.py</code></p></li>
+<li><p>2番と4番の両方</p></li>
+</ol>
+</section>
 <section id="チャレンジ埋もれたファイルを無視する" class="slide level2">
 <h2>チャレンジ：埋もれたファイルを無視する</h2>
 <p>以下のようなディレクトリ構造があるとします：</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">results/data</span></span>
-<span id="cb2-2"><a></a><span class="ex">results/plots</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a></a><span class="ex">results/data</span></span>
+<span id="cb17-2"><a></a><span class="ex">results/plots</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>results/data</code>ではなく、<code>results/plots</code>のみを無視するにはどうすればよいでしょう？</p>
 </section>
-<section id="チャレンジログファイル" class="slide level2 smaller">
-<h2>チャレンジ：ログファイル</h2>
+<section id="チャレンジ-ログファイル" class="slide level2 smaller">
+<h2>チャレンジ： ログファイル</h2>
 <p>仮に <code>log_01</code>、<code>log_02</code>、<code>log_03</code>といった中間ログファイルを作成するスクリプトを書いたとします。 これらのログファイルは保存しておきたいものの、gitで追跡したくありません。</p>
 <ol type="1">
 <li><code>log_01</code>、<code>log_02</code>などのファイルを無視するためのルールを1つだけ<code>.gitignore</code>に記入してください。</li>
@@ -839,7 +914,7 @@
 <section id="オーナーのリポジトリをクローンする-1" class="slide level2">
 <h2>オーナーのリポジトリをクローンする</h2>
 <p>デスクトップフォルダにクローンする場合:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="ex">$</span> git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a></a><span class="ex">$</span> git clone git@github.com:vlad/planets.git ~/Desktop/vlad-planets</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>vlad</code> をオーナーのユーザー名に置き換えてください。</p>
 <p>クローンパス（<code>~/Desktop/vlad-planets</code>）を指定しない場合、自分の <code>planets</code> フォルダ内にクローンされるので、<strong>最初にデスクトップフォルダに移動してください。</strong></p>
 </section>
@@ -852,14 +927,14 @@
 <ul>
 <li>コラボレーターは、オーナーのリポジトリのクローンに変更を加えます。例えば:</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a></a><span class="bu">cd</span> ~/Desktop/vlad-planets</span>
-<span id="cb4-2"><a></a><span class="fu">nano</span> pluto.txt</span>
-<span id="cb4-3"><a></a><span class="fu">git</span> add pluto.txt</span>
-<span id="cb4-4"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add notes about Pluto"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a></a><span class="bu">cd</span> ~/Desktop/vlad-planets</span>
+<span id="cb19-2"><a></a><span class="fu">nano</span> pluto.txt</span>
+<span id="cb19-3"><a></a><span class="fu">git</span> add pluto.txt</span>
+<span id="cb19-4"><a></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add notes about Pluto"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="変更を加えたファイルをリモートに送るプッシュ" class="slide level2">
 <h2>変更を加えたファイルをリモートに送る（プッシュ）</h2>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb20-1"><a></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="オーナーのリポジトリを確認" class="slide level2">
 <h2>オーナーのリポジトリを確認</h2>
@@ -873,7 +948,7 @@
 <ul>
 <li>オーナーが以下を実行します：</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>これで、3つのリポジトリ（オーナーのローカル、オーナーのリモート、コラボレーターのリポジトリ）が同期されます。</li>
 </ul>
@@ -929,8 +1004,8 @@
 <section id="コンフリクトを作る-コラボレーターが編集" class="slide level2">
 <h2>コンフリクトを作る (コラボレーターが編集)</h2>
 <p>コラボレーターの方にだけ 1 行追加してみましょう。</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a></a><span class="ex">$</span> nano mars.txt</span>
-<span id="cb7-2"><a></a><span class="ex">$</span> cat mars.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a></a><span class="ex">$</span> nano mars.txt</span>
+<span id="cb22-2"><a></a><span class="ex">$</span> cat mars.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
@@ -939,15 +1014,15 @@ This line added to Wolfman's copy</code></pre>
 <section id="コンフリクトを作る-コラボレーターがコミット" class="slide level2">
 <h2>コンフリクトを作る (コラボレーターがコミット)</h2>
 <p>コラボレーターの方で変更をコミットします。</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a></a><span class="ex">$</span> git add mars.txt</span>
-<span id="cb9-2"><a></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add a line in our home copy"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a></a><span class="ex">$</span> git add mars.txt</span>
+<span id="cb24-2"><a></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add a line in our home copy"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>[main 5ae9631] Add a line in our home copy
  1 file changed, 1 insertion(+)</code></pre>
 </section>
 <section id="コンフリクトを作る-コラボレーターがプッシュ" class="slide level2 smaller">
 <h2>コンフリクトを作る (コラボレーターがプッシュ)</h2>
 <p>コラボレーターの方でコミットを GitHub にプッシュします。</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a></a><span class="ex">$</span> git push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a></a><span class="ex">$</span> git push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
 Delta compression using up to 8 threads
@@ -961,8 +1036,8 @@ To https://github.com/vlad/planets.git
 <section id="コンフリクトを作る-オーナーが編集" class="slide level2">
 <h2>コンフリクトを作る (オーナーが編集)</h2>
 <p>オーナーが GitHub から pull せずに、自分のコピーに「別の」変更を加えてもらいます。</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a></a><span class="ex">$</span> nano mars.txt</span>
-<span id="cb13-2"><a></a><span class="ex">$</span> cat mars.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a></a><span class="ex">$</span> nano mars.txt</span>
+<span id="cb28-2"><a></a><span class="ex">$</span> cat mars.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
@@ -971,15 +1046,15 @@ We added a different line in the other copy</code></pre>
 <section id="コンフリクトを作る-オーナーがコミット" class="slide level2">
 <h2>コンフリクトを作る (オーナーがコミット)</h2>
 <p>オーナーは変更をローカルにコミットできます:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a></a><span class="ex">$</span> git add mars.txt</span>
-<span id="cb15-2"><a></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add a line in my copy"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a></a><span class="ex">$</span> git add mars.txt</span>
+<span id="cb30-2"><a></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Add a line in my copy"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>[main 07ebc69] Add a line in my copy
  1 file changed, 1 insertion(+)</code></pre>
 </section>
 <section id="コンフリクトを作る-オーナーがプッシュできない" class="slide level2 smaller">
 <h2>コンフリクトを作る (オーナーがプッシュ「できない」)</h2>
 <p>しかし、オーナーは Git で GitHub にプッシュできません。</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb17-1"><a></a><span class="ex">$</span> git push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a></a><span class="ex">$</span> git push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>To https://github.com/vlad/planets.git
  ! [rejected]        main -&gt; main (fetch first)
 error: failed to push some refs to 'https://github.com/vlad/planets.git'
@@ -997,7 +1072,7 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.</code
 <section id="コンフリクトの解決-オーナーが-git-pull-する" class="slide level2 smaller">
 <h2>コンフリクトの解決 (オーナーが git pull する)</h2>
 <p>必要なのは、GitHub から変更を pull し、現在作業中のコピーにマージしてからプッシュすることです。 まずは pull から始めましょう:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a></a><span class="ex">$</span> git pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a></a><span class="ex">$</span> git pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>remote: Enumerating objects: 5, done.
 remote: Counting objects: 100% (5/5), done.
 remote: Compressing objects: 100% (1/1), done.
@@ -1013,7 +1088,7 @@ Automatic merge failed; fix conflicts and then commit the result.</code></pre>
 <section id="コンフリクトの解決-拒否されたマージの結果" class="slide level2 smaller">
 <h2>コンフリクトの解決 (拒否されたマージの結果)</h2>
 <p>git pullコマンドは、ローカル リポジトリを更新して、リモート リポジトリにすでに含まれている変更を組み込みます。 リモート ブランチからの変更が取得された後、Git はローカル コピーに加えられた変更がリモート リポジトリに加えられた変更と重複していることを検出し、 以前の作業が損なわれないように 2 つのバージョンのマージを拒否します。 コンフリクトは、影響を受けるファイルで下記のようにマークされます。</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a></a><span class="ex">$</span> cat mars.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a></a><span class="ex">$</span> cat mars.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
@@ -1033,8 +1108,8 @@ We removed the conflict on this line</code></pre>
 </section>
 <section id="コンフリクトの解決-マージを完了するために変更をコミットする" class="slide level2 smaller">
 <h2>コンフリクトの解決 (マージを完了するために変更をコミットする)</h2>
-<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a></a><span class="ex">$</span> git add mars.txt</span>
-<span id="cb24-2"><a></a><span class="ex">$</span> git status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb39-1"><a></a><span class="ex">$</span> git add mars.txt</span>
+<span id="cb39-2"><a></a><span class="ex">$</span> git status</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>On branch main
 All conflicts fixed but you are still merging.
   (use "git commit" to conclude merge)
@@ -1042,12 +1117,12 @@ All conflicts fixed but you are still merging.
 Changes to be committed:
 
     modified:   mars.txt</code></pre>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Merge changes from GitHub"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb41-1"><a></a><span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"Merge changes from GitHub"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>[main 2abf2b1] Merge changes from GitHub</code></pre>
 </section>
 <section id="コンフリクトの解決-ついに-push-してコンフリクトを解決" class="slide level2 smaller">
 <h2>コンフリクトの解決 (ついに push してコンフリクトを解決)</h2>
-<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a></a><span class="ex">$</span> git push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb43-1"><a></a><span class="ex">$</span> git push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>Enumerating objects: 10, done.
 Counting objects: 100% (10/10), done.
 Delta compression using up to 8 threads
@@ -1061,7 +1136,7 @@ To https://github.com/vlad/planets.git
 <section id="コンフリクトの解決-今度はコラボレーターが-pull-する" class="slide level2 smaller">
 <h2>コンフリクトの解決 (今度はコラボレーターが pull する)</h2>
 <p>Git は何を何とマージしたかを追跡しているので、最初の変更を行ったコラボレーターが pull したときに、再度手作業で修正する必要がありません。 今度はコラボレーターが pull してください</p>
-<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb30-1"><a></a><span class="ex">$</span> git pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb45-1"><a></a><span class="ex">$</span> git pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>remote: Enumerating objects: 10, done.
 remote: Counting objects: 100% (10/10), done.
 remote: Compressing objects: 100% (2/2), done.
@@ -1078,7 +1153,7 @@ Fast-forward
 <section id="コンフリクトの解決-コラボレーターがオーナーにマージされた内容を確認" class="slide level2 smaller">
 <h2>コンフリクトの解決 (コラボレーターがオーナーにマージされた内容を確認)</h2>
 <p>コラボレーターはオーナーにマージされた内容を確認してみましょう</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a></a><span class="ex">$</span> cat mars.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb47-1"><a></a><span class="ex">$</span> cat mars.txt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>Cold and dry, but everything is my favorite color
 The two moons may be a problem for Wolfman
 But the Mummy will appreciate the lack of humidity
@@ -1115,10 +1190,10 @@ We removed the conflict on this line</code></pre>
 <ul>
 <li>次のプログラムの各文の後で、各変数の値はどうなるでしょうか？</li>
 </ul>
-<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a>mass <span class="ot">&lt;-</span> <span class="fl">47.5</span></span>
-<span id="cb34-2"><a></a>age <span class="ot">&lt;-</span> <span class="dv">122</span></span>
-<span id="cb34-3"><a></a>mass <span class="ot">&lt;-</span> mass <span class="sc">*</span> <span class="fl">2.3</span></span>
-<span id="cb34-4"><a></a>age <span class="ot">&lt;-</span> age <span class="sc">-</span> <span class="dv">20</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a>mass <span class="ot">&lt;-</span> <span class="fl">47.5</span></span>
+<span id="cb49-2"><a></a>age <span class="ot">&lt;-</span> <span class="dv">122</span></span>
+<span id="cb49-3"><a></a>mass <span class="ot">&lt;-</span> mass <span class="sc">*</span> <span class="fl">2.3</span></span>
+<span id="cb49-4"><a></a>age <span class="ot">&lt;-</span> age <span class="sc">-</span> <span class="dv">20</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li><p>上記のコードを実行し、massとageを比較するコマンドを書きましょう。massはageより大きいですか？</p></li>
 <li><p>作業環境を整理し、massとageの変数を削除しましょう。</p></li>
@@ -1212,9 +1287,9 @@ We removed the conflict on this line</code></pre>
 <section id="チャレンジデータフレームの作成" class="slide level2 smaller">
 <h2>チャレンジ：データフレームの作成</h2>
 <p>次の構文を使用して、新しいデータフレームを R 内で作成できます：</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>),</span>
-<span id="cb35-2"><a></a>                 <span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>,</span>
-<span id="cb35-3"><a></a>                 <span class="at">y =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">id =</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>),</span>
+<span id="cb50-2"><a></a>                 <span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>,</span>
+<span id="cb50-3"><a></a>                 <span class="at">y =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>以下の情報を持つデータフレームを作成してください：</p>
 <ul>
 <li>名</li>
@@ -1241,9 +1316,9 @@ We removed the conflict on this line</code></pre>
 <section id="チャレンジデータの部分の取得" class="slide level2 smaller">
 <h2>チャレンジ：データの部分の取得</h2>
 <p>次のコードが与えられた場合：</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span>)</span>
-<span id="cb36-2"><a></a><span class="fu">names</span>(x) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>)</span>
-<span id="cb36-3"><a></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span>)</span>
+<span id="cb51-2"><a></a><span class="fu">names</span>(x) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>)</span>
+<span id="cb51-3"><a></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code>a   b   c   d   e
 5.4 6.2 7.1 4.8 7.5 </code></pre>
 <p>次の出力を生成する少なくとも 2 つの異なるコマンドを考え出してください：</p>
@@ -1254,9 +1329,9 @@ We removed the conflict on this line</code></pre>
 <section id="チャレンジ条件を満たす部分の取得" class="slide level2">
 <h2>チャレンジ：条件を満たす部分の取得</h2>
 <p>以下のコードを用いて：</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span>)</span>
-<span id="cb39-2"><a></a><span class="fu">names</span>(x) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>)</span>
-<span id="cb39-3"><a></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span>)</span>
+<span id="cb54-2"><a></a><span class="fu">names</span>(x) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span>)</span>
+<span id="cb54-3"><a></a><span class="fu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <pre><code> a   b   c   d   e
 5.4 6.2 7.1 4.8 7.5 </code></pre>
 <p><code>x</code> から 4 より大きく 7 未満の値を返すサブセットコマンドを書いてください。</p>
@@ -1265,13 +1340,13 @@ We removed the conflict on this line</code></pre>
 <h2>チャレンジ：データを抽出するための論理ベクトルの作成1</h2>
 <p>ベクトルの要素を、特定のリスト内のいずれかと一致させる操作は、データ解析で非常に一般的なタスクです。 例えば、<code>gapminder</code> データセットには <code>country</code> と <code>continent</code> の変数がありますが、これらの間の情報は含まれていません。 東南アジアの情報を抽出したいとします。このとき、どのようにして東南アジアのすべての国について <code>TRUE</code>、それ以外を <code>FALSE</code> とする論理ベクトルを作成しますか？</p>
 <p>以下のデータを使用します：</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>seAsia <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Myanmar"</span>,<span class="st">"Thailand"</span>,<span class="st">"Cambodia"</span>,<span class="st">"Vietnam"</span>,<span class="st">"Laos"</span>)</span>
-<span id="cb41-2"><a></a><span class="do">## エピソード2でダウンロードした gapminder データを読み込む</span></span>
-<span id="cb41-3"><a></a>gapminder <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/gapminder_data.csv"</span>, <span class="at">header=</span><span class="cn">TRUE</span>)</span>
-<span id="cb41-4"><a></a><span class="do">## データフレームから `country` 列を抽出（詳細は後述）；</span></span>
-<span id="cb41-5"><a></a><span class="do">## factor を文字列に変換；</span></span>
-<span id="cb41-6"><a></a><span class="do">## 重複しない要素のみ取得</span></span>
-<span id="cb41-7"><a></a>countries <span class="ot">&lt;-</span> <span class="fu">unique</span>(<span class="fu">as.character</span>(gapminder<span class="sc">$</span>country))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a></a>seAsia <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Myanmar"</span>,<span class="st">"Thailand"</span>,<span class="st">"Cambodia"</span>,<span class="st">"Vietnam"</span>,<span class="st">"Laos"</span>)</span>
+<span id="cb56-2"><a></a><span class="do">## エピソード2でダウンロードした gapminder データを読み込む</span></span>
+<span id="cb56-3"><a></a>gapminder <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/gapminder_data.csv"</span>, <span class="at">header=</span><span class="cn">TRUE</span>)</span>
+<span id="cb56-4"><a></a><span class="do">## データフレームから `country` 列を抽出（詳細は後述）；</span></span>
+<span id="cb56-5"><a></a><span class="do">## factor を文字列に変換；</span></span>
+<span id="cb56-6"><a></a><span class="do">## 重複しない要素のみ取得</span></span>
+<span id="cb56-7"><a></a>countries <span class="ot">&lt;-</span> <span class="fu">unique</span>(<span class="fu">as.character</span>(gapminder<span class="sc">$</span>country))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="チャレンジデータを抽出するための論理ベクトルの作成2" class="slide level2">
 <h2>チャレンジ：データを抽出するための論理ベクトルの作成2</h2>
@@ -1288,23 +1363,23 @@ We removed the conflict on this line</code></pre>
 <ol type="1">
 <li>年 1957 の観測値を抽出する</li>
 </ol>
-<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a>gapminder[gapminder<span class="sc">$</span>year <span class="ot">=</span> <span class="dv">1957</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a></a>gapminder[gapminder<span class="sc">$</span>year <span class="ot">=</span> <span class="dv">1957</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
 <li>1列目から4列目以外のすべての列を抽出する</li>
 </ol>
-<div class="sourceCode" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a>gapminder[,<span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a></a>gapminder[,<span class="sc">-</span><span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="3" type="1">
 <li>寿命が80年以上の行を抽出する</li>
 </ol>
-<div class="sourceCode" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a>gapminder[gapminder<span class="sc">$</span>lifeExp <span class="sc">&gt;</span> <span class="dv">80</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a></a>gapminder[gapminder<span class="sc">$</span>lifeExp <span class="sc">&gt;</span> <span class="dv">80</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="4" type="1">
 <li>1行目と4列目、5列目（<code>continent</code> と <code>lifeExp</code>）を抽出する</li>
 </ol>
-<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a>gapminder[<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a></a>gapminder[<span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="5" type="1">
 <li>応用：年 2002 年と 2007 年の情報を含む行を抽出する</li>
 </ol>
-<div class="sourceCode" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a>gapminder[gapminder<span class="sc">$</span>year <span class="sc">==</span> <span class="dv">2002</span> <span class="sc">|</span> <span class="dv">2007</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a></a>gapminder[gapminder<span class="sc">$</span>year <span class="sc">==</span> <span class="dv">2002</span> <span class="sc">|</span> <span class="dv">2007</span>,]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="チャレンジデータフレームのサブセットへのアクセス" class="slide level2">
 <h2>チャレンジ：データフレームのサブセットへのアクセス</h2>
@@ -1322,10 +1397,10 @@ We removed the conflict on this line</code></pre>
 <h2>チャレンジ</h2>
 <p>例を修正して、平均寿命が時間とともにどのように変化したかを示す図を作成してください：</p>
 <div class="medium">
-<div class="sourceCode" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a><span class="fu">ggplot</span>(</span>
-<span id="cb47-2"><a></a>  <span class="at">data =</span> gapminder,</span>
-<span id="cb47-3"><a></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
-<span id="cb47-4"><a></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a></a><span class="fu">ggplot</span>(</span>
+<span id="cb62-2"><a></a>  <span class="at">data =</span> gapminder,</span>
+<span id="cb62-3"><a></a>  <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> gdpPercap, <span class="at">y =</span> lifeExp)) <span class="sc">+</span></span>
+<span id="cb62-4"><a></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>ヒント：<code>gapminder</code> データセットには “year” という列があり、これを X 軸に表示する必要があります。</p>
 </section>

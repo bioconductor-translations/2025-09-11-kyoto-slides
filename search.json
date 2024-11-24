@@ -196,11 +196,60 @@
     "text": "チャレンジ: 相対パス\n\n\npwdが/Users/thingを表示している場合、ls -F ../backupは何を表示しますか？\n\n../backup: No such file or directory\n2012-12-01 2013-01-08 2013-01-27\n2012-12-01/ 2013-01-08/ 2013-01-27/\noriginal/ pnas_final/ pnas_sub/"
   },
   {
+    "objectID": "index.html#チャレンジ-ファイルの移動",
+    "href": "index.html#チャレンジ-ファイルの移動",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ: ファイルの移動",
+    "text": "チャレンジ: ファイルの移動\n以下のコマンドシーケンスで、最後のlsコマンドの出力はどうなりますか？\n$ pwd\n/Users/jamie/data\n$ ls\nproteins.dat\n$ mkdir recombined\n$ mv proteins.dat recombined/\n$ cp recombined/proteins.dat ../proteins-saved.dat\n$ ls\n\nproteins-saved.dat recombined\nrecombined\nproteins.dat recombined\nproteins-saved.dat"
+  },
+  {
+    "objectID": "index.html#チャレンジ-ファイルの整理",
+    "href": "index.html#チャレンジ-ファイルの整理",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ: ファイルの整理",
+    "text": "チャレンジ: ファイルの整理\nJamieはプロジェクトに取り組んでいますが、ファイルがあまり整理されていないことに気づきました：\n$ ls -F\nanalyzed/  fructose.dat    raw/   sucrose.dat\nfructose.datとsucrose.datのファイルはデータ解析の出力を含んでいます。 以下のコマンドが示す出力を得るために、Jamieはどのコマンドを実行する必要がありますか？\n$ ls -F\nanalyzed/   raw/\n$ ls analyzed\nfructose.dat    sucrose.dat"
+  },
+  {
     "objectID": "index.html#なぜgitを使うのか",
     "href": "index.html#なぜgitを使うのか",
     "title": "SWC @ 千葉大学",
     "section": "なぜGitを使うのか？",
     "text": "なぜGitを使うのか？\n\nGitとは、ファイル（コード）を追跡するソフトです。\nMS Wordの「変更履歴の追跡」機能に似ています。\nコードが「壊れた」時に巻き戻せます。\nコードの共有や共同作業を簡単にします。"
+  },
+  {
+    "objectID": "index.html#ストーリー",
+    "href": "index.html#ストーリー",
+    "title": "SWC @ 千葉大学",
+    "section": "ストーリー",
+    "text": "ストーリー"
+  },
+  {
+    "objectID": "index.html#チャレンジ-コミットメッセージを決める",
+    "href": "index.html#チャレンジ-コミットメッセージを決める",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ： コミットメッセージを決める",
+    "text": "チャレンジ： コミットメッセージを決める\n以下のコミットメッセージの内、最後の mars.txt のコミットに最適なメッセージはどれでしょう？\n\n“Changes”\n“Added line ‘But the Mummy will appreciate the lack of humidity’ to mars.txt”\n“Discuss effects of Mars’ climate on the Mummy”"
+  },
+  {
+    "objectID": "index.html#チャレンジ-bio-リポジトリ",
+    "href": "index.html#チャレンジ-bio-リポジトリ",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ： bio リポジトリ",
+    "text": "チャレンジ： bio リポジトリ\n\nbio という Git リポジトリ新しく作りましょう。\nme.txt というファイルに自分について３文書いて、変更点をコミットしてください。\nすでに書いた文章の内、ひとつだけ編集して、更にもう一文加えてください。\n編集した後の状態とその前の違いを表示してください。"
+  },
+  {
+    "objectID": "index.html#チャレンジ-変更点をコミットする",
+    "href": "index.html#チャレンジ-変更点をコミットする",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ： 変更点をコミットする",
+    "text": "チャレンジ： 変更点をコミットする\n以下の内、myfile.txt を Git リポジトリに保存するためのコマンドはどれでしょう？\n\n   $ git commit -m \"my recent changes\"\n   $ git init myfile.txt\n   $ git commit -m \"my recent changes\"\n   $ git add myfile.txt\n   $ git commit -m \"my recent changes\"\n   $ git commit -m myfile.txt \"my recent changes\""
+  },
+  {
+    "objectID": "index.html#チャレンジ-ファイルの復元",
+    "href": "index.html#チャレンジ-ファイルの復元",
+    "title": "SWC @ 千葉大学",
+    "section": "チャレンジ： ファイルの復元",
+    "text": "チャレンジ： ファイルの復元\nジェニファーは、数週間取り組んできたPythonスクリプトに変更を加えました。そして今朝行った変更により、スクリプトが “壊れ”、動作しなくなりました。 彼女はそれを修正しようとして約1時間費やしましたが、うまく機能しません…\n幸い、彼女はGitを使用してプロジェクトのバージョンを追跡していました! 以下のどのコマンドで、data_cruncher.py と呼ばれるPythonスクリプトの最後にコミットされたバージョンを復元できるでしょうか？\n\n$ git restore\n$ git restore data_cruncher.py\n$ git restore -s HEAD~1 data_cruncher.py\n$ git restore -s &lt;最後のコミットのID&gt; data_cruncher.py\n2番と4番の両方"
   },
   {
     "objectID": "index.html#チャレンジ埋もれたファイルを無視する",
@@ -210,11 +259,11 @@
     "text": "チャレンジ：埋もれたファイルを無視する\n以下のようなディレクトリ構造があるとします：\nresults/data\nresults/plots\nresults/dataではなく、results/plotsのみを無視するにはどうすればよいでしょう？"
   },
   {
-    "objectID": "index.html#チャレンジログファイル",
-    "href": "index.html#チャレンジログファイル",
+    "objectID": "index.html#チャレンジ-ログファイル",
+    "href": "index.html#チャレンジ-ログファイル",
     "title": "SWC @ 千葉大学",
-    "section": "チャレンジ：ログファイル",
-    "text": "チャレンジ：ログファイル\n仮に log_01、log_02、log_03といった中間ログファイルを作成するスクリプトを書いたとします。 これらのログファイルは保存しておきたいものの、gitで追跡したくありません。\n\nlog_01、log_02などのファイルを無視するためのルールを1つだけ.gitignoreに記入してください。\n入力したパターンが正常に動作するか確認するために、log_01などのファイルを作成してください。\n最終的にlog_01ファイルが重要であると判明しました。.gitignoreを編集せずにこのファイルを追跡対象に加えてください。\n隣の人と、「追跡したくないファイルにはどのようなものがあるか」「.gitignoreにどのように記述するか」を話し合ってください。"
+    "section": "チャレンジ： ログファイル",
+    "text": "チャレンジ： ログファイル\n仮に log_01、log_02、log_03といった中間ログファイルを作成するスクリプトを書いたとします。 これらのログファイルは保存しておきたいものの、gitで追跡したくありません。\n\nlog_01、log_02などのファイルを無視するためのルールを1つだけ.gitignoreに記入してください。\n入力したパターンが正常に動作するか確認するために、log_01などのファイルを作成してください。\n最終的にlog_01ファイルが重要であると判明しました。.gitignoreを編集せずにこのファイルを追跡対象に加えてください。\n隣の人と、「追跡したくないファイルにはどのようなものがあるか」「.gitignoreにどのように記述するか」を話し合ってください。"
   },
   {
     "objectID": "index.html#認証の設定",
