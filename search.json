@@ -592,7 +592,7 @@
     "href": "index.html#チャレンジ",
     "title": "SWC @ 千葉大学",
     "section": "チャレンジ",
-    "text": "チャレンジ\n例を修正して、平均寿命が時間とともにどのように変化したかを示す図を作成してください：\nggplot(data = gapminder, mapping = aes(x = gdpPercap, y = lifeExp)) + geom_point()\nヒント：gapminder データセットには “year” という列があり、これを X 軸に表示する必要があります。"
+    "text": "チャレンジ\n例を修正して、平均寿命が時間とともにどのように変化したかを示す図を作成してください：\n\nggplot(\n  data = gapminder,\n  mapping = aes(x = gdpPercap, y = lifeExp)) +\n  geom_point()\n\nヒント：gapminder データセットには “year” という列があり、これを X 軸に表示する必要があります。"
   },
   {
     "objectID": "index.html#チャレンジ-1",
@@ -641,7 +641,7 @@
     "href": "index.html#集合写真",
     "title": "SWC @ 千葉大学",
     "section": "集合写真",
-    "text": "集合写真\n\n「公開しても大丈夫」という方は、ぜひご協力ください。\n後ろから撮影した集合写真を公開する場合があります。もし公開を希望されない場合は、お知らせください。\n\nhttps://swcarpentry-ja.github.io/2024-05-30-chiba/"
+    "text": "集合写真\n\n「公開しても大丈夫」という方は、ぜひご協力ください。\n後ろから撮影した集合写真を公開する場合があります。もし公開を希望されない場合は、お知らせください。"
   },
   {
     "objectID": "about.html",
