@@ -413,6 +413,13 @@
     "text": "チャレンジ：変更のレビュー\nオーナーがコラボレーターに情報を提供せずにリポジトリにコミットをプッシュしました。\n\nコマンドラインでは、コラボレーターは何が変更されたかをどのように確認できますか？\nGitHub ではどのように確認できますか？"
   },
   {
+    "objectID": "index.html#コラボレイティブノート-2",
+    "href": "index.html#コラボレイティブノート-2",
+    "title": "SWC @ 千葉大学",
+    "section": "コラボレイティブ・ノート",
+    "text": "コラボレイティブ・ノート\n\n\nEtherpadにリンクとコードを貼っておきます。\n\n様々なリンクがあるので、今のうちにご自身のブラウザで開いてください。"
+  },
+  {
     "objectID": "index.html#日目のおさらい",
     "href": "index.html#日目のおさらい",
     "title": "SWC @ 千葉大学",
@@ -420,32 +427,25 @@
     "text": "1日目のおさらい\n\nシェルは研究に必要不可欠なスキルです。\n\nオープンソースソフトウェアの活用\nサーバーの操作\ngit の使用にも必須\n\ngit はコードの細かな変更を追跡し、共有を可能にします。"
   },
   {
-    "objectID": "index.html#フィードバック",
-    "href": "index.html#フィードバック",
+    "objectID": "index.html#フィードバックよくできたこと",
+    "href": "index.html#フィードバックよくできたこと",
     "title": "SWC @ 千葉大学",
-    "section": "フィードバック",
-    "text": "フィードバック\nよくできたこと\n\n「ふせんのおかげで質問や意思表示がしやすかった」\n「よくわからないことがあった時にすぐにサポートに来ていただいて大変助かりました」"
+    "section": "フィードバック：よくできたこと",
+    "text": "フィードバック：よくできたこと\n\n「ふせんのおかげで質問や意思表示がしやすかった」\n「よくわからないことがあった時にすぐにサポートに来ていただいて大変助かりました」\n「トラブルが起きても言いやすい環境だったのが良かった」"
   },
   {
-    "objectID": "index.html#フィードバック-1",
-    "href": "index.html#フィードバック-1",
+    "objectID": "index.html#フィードバック改善できるところ",
+    "href": "index.html#フィードバック改善できるところ",
     "title": "SWC @ 千葉大学",
-    "section": "フィードバック",
-    "text": "フィードバック\n改善できるところ\n\nホワイトボードの文字（図）が見づらい → 濃いペンを使います！大きく書きます！\n画面の文字が少し小さい → 大きくしました\nユーザー名やディレクトリ名が色分けされるようなターミナルを用いてくれると嬉しい → ターミナルの設定を変えました"
+    "section": "フィードバック：改善できるところ",
+    "text": "フィードバック：改善できるところ\n\nホワイトボードの文字（図）が見づらい → 濃いペンを使います！大きく書きます！\n画面の文字が少し小さい → 大きくしました\nユーザー名やディレクトリ名が色分けされるようなターミナルを用いてくれると嬉しい → ターミナルの設定を変えました\n「何のためにどうしてコマンドを行うのか、何に使うことができるのか、説明があると嬉しかったです」 → 背景の説明を増やします"
   },
   {
-    "objectID": "index.html#フィードバック-2",
-    "href": "index.html#フィードバック-2",
+    "objectID": "index.html#コンフリクトのイメージ",
+    "href": "index.html#コンフリクトのイメージ",
     "title": "SWC @ 千葉大学",
-    "section": "フィードバック",
-    "text": "フィードバック\n改善できるところ\n\n「何のためにどうしてコマンドを行うのか、何に使うことができるのか、説明があると嬉しかったです」 → 背景の説明を増やします"
-  },
-  {
-    "objectID": "index.html#背景",
-    "href": "index.html#背景",
-    "title": "SWC @ 千葉大学",
-    "section": "背景",
-    "text": "背景\n質問\n\n自分の変更が他の人の変更とコンフリクトする場合はどうすればいいですか?\n\n目的\n\nコンフリクトとは何か、いつ発生する可能性があるかを説明します。\nマージによって生じる競合を解決します。"
+    "section": "コンフリクトのイメージ",
+    "text": "コンフリクトのイメージ"
   },
   {
     "objectID": "index.html#コンフリクトを作る-コラボレーターが編集",
@@ -490,8 +490,8 @@
     "text": "コンフリクトを作る (オーナーがプッシュ「できない」)\nしかし、オーナーは Git で GitHub にプッシュできません。\n$ git push origin main\nTo https://github.com/vlad/planets.git\n ! [rejected]        main -&gt; main (fetch first)\nerror: failed to push some refs to 'https://github.com/vlad/planets.git'\nhint: Updates were rejected because the remote contains work that you do\nhint: not have locally. This is usually caused by another repository pushing\nhint: to the same ref. You may want to first integrate the remote changes\nhint: (e.g., 'git pull ...') before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details."
   },
   {
-    "objectID": "index.html#コンフリクトのイメージ",
-    "href": "index.html#コンフリクトのイメージ",
+    "objectID": "index.html#コンフリクトのイメージ-1",
+    "href": "index.html#コンフリクトのイメージ-1",
     "title": "SWC @ 千葉大学",
     "section": "コンフリクトのイメージ",
     "text": "コンフリクトのイメージ\n\nGit は、リモート リポジトリにローカル ブランチに組み込まれていない新しい更新があることを検出したため、プッシュを拒否しました。"
