@@ -681,6 +681,24 @@ git pull origin main
 
 # ソフトウェア<br>カーペントリー 二日目
 
+::: {.medlarge}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+千葉大学 2024-11-26
+:::
+
+::: {.column width="30%"}
+![](images/qrcode.svg){height="300px" width="300px"}
+:::
+
+::::
+
+:::
+
+<https://swcarpentry-ja.github.io/2024-11-25-chiba-slides/>
+
 ## 1日目のおさらい
 
 - シェルは研究に**必要不可欠**なスキルです。
