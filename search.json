@@ -46,14 +46,14 @@
     "href": "index.html#準備",
     "title": "SWC @ 千葉大学",
     "section": "準備",
-    "text": "準備\n\nソフトウェアのインストール（R, RStudio）\nファイルのダウンロード\n\nbash\n\nワークショップ前アンケート"
+    "text": "準備\n\nソフトウェアのインストール（R, RStudio）"
   },
   {
-    "objectID": "index.html#ソフトウェアカーペントリーの紹介",
-    "href": "index.html#ソフトウェアカーペントリーの紹介",
+    "objectID": "index.html#the-carpentries-の紹介",
+    "href": "index.html#the-carpentries-の紹介",
     "title": "SWC @ 千葉大学",
-    "section": "ソフトウェアカーペントリーの紹介",
-    "text": "ソフトウェアカーペントリーの紹介"
+    "section": "The Carpentries の紹介",
+    "text": "The Carpentries の紹介"
   },
   {
     "objectID": "index.html#問題",
@@ -63,11 +63,11 @@
     "text": "問題\n\n\n\n研究者は近年、コードを使うことが必要不可欠になっています。\n多くの研究者は独学でコードを学びます。\nしかし、効率があまり良くありません。"
   },
   {
-    "objectID": "index.html#ソフトウェアカーペントリーswcの解決法",
-    "href": "index.html#ソフトウェアカーペントリーswcの解決法",
+    "objectID": "index.html#the-carpentries-の解決法",
+    "href": "index.html#the-carpentries-の解決法",
     "title": "SWC @ 千葉大学",
-    "section": "ソフトウェアカーペントリー（SWC）の解決法",
-    "text": "ソフトウェアカーペントリー（SWC）の解決法\n\n\n\n研究者がコミュニティを作り、互いに教え合います。\n2日間にわたるワークショップで、3〜4つのレッスンを学びます。\n\nhttps://software-carpentry.org/"
+    "section": "The Carpentries の解決法",
+    "text": "The Carpentries の解決法\n\n\n\n研究者がコミュニティを作り、互いに教え合います。\n2日間にわたるワークショップで、3〜4つのレッスンを学びます。\n\nhttps://software-carpentry.org/"
   },
   {
     "objectID": "index.html#ワークショップ",
@@ -81,14 +81,14 @@
     "href": "index.html#日本ではまだ始まったばかり",
     "title": "SWC @ 千葉大学",
     "section": "日本ではまだ始まったばかり",
-    "text": "日本ではまだ始まったばかり\n\n今回が第2回目の対面日本語ワークショップです。\n\n今後も増やしていく予定です。\n\n翻訳活動も行っています。"
+    "text": "日本ではまだ始まったばかり\n\n今回が第1回目の対面 Bioconductor Carpentries 日本語ワークショップです。\n\n今後も増やしていく予定です。\n\n翻訳活動も行っています。"
   },
   {
     "objectID": "index.html#参加者大募集中",
     "href": "index.html#参加者大募集中",
     "title": "SWC @ 千葉大学",
     "section": "参加者大募集中!",
-    "text": "参加者大募集中!\n\nSlack\n\nhttps://slack-invite.carpentries.org/ から Slack に参加し、#local-japan チャンネルに入ってください。\n\nGitHub: https://swcarpentry-ja.github.io/"
+    "text": "参加者大募集中!\n\nSlack\n\nhttps://slack-invite.carpentries.org/ から Slack に参加し、#local-japan チャンネルに入ってください。\n\nGitHub: https://bioconductor-translations.github.io/"
   },
   {
     "objectID": "index.html#ワークショップの流れ",
@@ -102,14 +102,14 @@
     "href": "index.html#内容",
     "title": "SWC @ 千葉大学",
     "section": "内容",
-    "text": "内容\n\n25日：Shell、Git\n26日：R\n\n上記のリンクからレッスンの内容にアクセスできます（ChatGPTによる翻訳が含まれています）"
+    "text": "内容\n\n25日：RとBioconductorによるデータ分析\n26日：Bioconductorプロジェクト\n\n上記のリンクからレッスンの内容にアクセスできます（ChatGPTによる翻訳が含まれています）"
   },
   {
-    "objectID": "index.html#swcワークショップの流れ",
-    "href": "index.html#swcワークショップの流れ",
+    "objectID": "index.html#ワークショップの流れ-1",
+    "href": "index.html#ワークショップの流れ-1",
     "title": "SWC @ 千葉大学",
-    "section": "SWCワークショップの流れ",
-    "text": "SWCワークショップの流れ\n\n軽いスライドによる内容の説明\nライブコーディング"
+    "section": "ワークショップの流れ",
+    "text": "ワークショップの流れ\n\nライブコーディング"
   },
   {
     "objectID": "index.html#ライブコーディングとは",
@@ -123,28 +123,21 @@
     "href": "index.html#ライブコーディングとは-1",
     "title": "SWC @ 千葉大学",
     "section": "ライブコーディングとは？",
-    "text": "ライブコーディングとは？\n\n\n\nインストラクターは参加者の理解を確認します（例：「〜ができましたか？」）\n理解できている場合は緑の付箋をラップトップに貼ってください。\n困ったことがある場合は赤い付箋をラップトップに貼ってください。\n\nヘルパーが助けに行きます。"
+    "text": "ライブコーディングとは？\n\n\n\nインストラクターは参加者の理解を確認します（例：「〜ができましたか？」）\n理解できている場合は、Zoom ウェビナーのリアクションでポジティブなリアクションを行ってください。\n困ったことがある場合は、 Zoom ウェビナーのリアクションでネガティブなリアクションを行ってください。\n\nインストラクター／ヘルパーが質問に応じます。"
   },
   {
     "objectID": "index.html#コラボレイティブノート",
     "href": "index.html#コラボレイティブノート",
     "title": "SWC @ 千葉大学",
     "section": "コラボレイティブ・ノート",
-    "text": "コラボレイティブ・ノート\nEtherpadにコードを貼っておきます。\n\nインストラクターが進みすぎてコードが見えなくなった場合は、Etherpadのメモを参照してください。\n\n参加者も自由に書き込んでください。"
+    "text": "コラボレイティブ・ノート\nGoogle Docsにコードを貼っておきます。\n\nインストラクターが進みすぎてコードが見えなくなった場合は、Google Docsのメモを参照してください。\n\n参加者も自由に書き込んでください。"
   },
   {
     "objectID": "index.html#フィードバックの種類",
     "href": "index.html#フィードバックの種類",
     "title": "SWC @ 千葉大学",
     "section": "フィードバックの種類",
-    "text": "フィードバックの種類\n\n感想（1日の終わりに付箋に記入していただきます）\nワークショップ前後のアンケート"
-  },
-  {
-    "objectID": "index.html#アイスブレーカー",
-    "href": "index.html#アイスブレーカー",
-    "title": "SWC @ 千葉大学",
-    "section": "アイスブレーカー",
-    "text": "アイスブレーカー\n隣の方に自己紹介をしましょう\n\n研究テーマは何ですか？\n趣味は何ですか？"
+    "text": "フィードバックの種類\n\n感想\nアンケート"
   },
   {
     "objectID": "index.html#集合写真",
