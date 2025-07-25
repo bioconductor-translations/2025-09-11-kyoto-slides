@@ -7,116 +7,59 @@ execute:
   echo: true
 ---
 
-# ソフトウェア<br>カーペントリー 
+# 第1回 Bioconductor Carpentries 日本語 ワークショップ 
 
 ::: {.medlarge}
 
 :::: {.columns}
 
 ::: {.column width="70%"}
-千葉大学 2024-11-25 ~ 26
-:::
-
-::: {.column width="30%"}
-![](images/qrcode.svg){height="300px" width="300px"}
+大阪大学 微生物病研究所 2025-08-05 ~ 06
 :::
 
 ::::
 
 :::
 
-<https://swcarpentry-ja.github.io/2024-11-25-chiba-slides/>
-
-## コラボレイティブ・ノート
-
-:::: {.columns}
-
-::: {.column width="70%"}
-[Etherpad](https://pad.carpentries.org/2024-11-25-chiba)に**リンク**とコードを貼っておきます。
-
-- 様々なリンクがあるので、今のうちにご自身のブラウザで開いてください。
-:::
-
-::: {.column width="30%"}
-![](images/qrcode_etherpad.svg){height="300px" width="300px"}
-:::
-
-::::
+<https://bioconductor-translations.github.io/2025-08-05-osaka-slides/>
 
 ## アウトライン
 
 - スタッフの自己紹介
-- ソフトウェアカーペントリーの紹介
+- Bioconductor と The Carpentries の紹介
 - ワークショップの流れ
 - アイスブレーカー
 
 ## スタッフの自己紹介 {.center}
 
-## ニッタ ジョエル<br>（インストラクター）
-
-::: {.columns}
-::: {.column}
-[`@joelnitta`](https://github.com/joelnitta/)
-
-- 千葉大学 国際学術研究院 准教授
-
-- 研究テーマ：シダ植物の進化、生態学、ゲノム解析
-
-- 趣味：ジョギング
-:::
-::: {.column}
-![](images/joel_nitta_in_field.png){height=350px}
-:::
-:::
-
 ## 西田 孝三（インストラクター）
 
 ::: {.columns}
 ::: {.column}
-- パートタイマー
+- 理化学研究所 生命機能科学研究センター 技師
 
-- 東京農工大学 理化学研究所 等
+- 趣味：オープンソース・オープンサイエンスコミュニティに貢献すること
 
-- 研究テーマ：パスウェイ-オミクスデータ マッピング・可視化
-
-- 趣味：オープンサイエンスコミュニティに貢献すること
+- プロジェクト: Bioconductor パッケージ作成・コミュニティ管理
 :::
 ::: {.column}
 ![](http://bioconductor.org/images/cab/kozo.png)
 :::
 :::
 
-## 岡　昂輝（ヘルパー）
+## 後藤 直久（ヘルパー）
 
 ::: {.columns}
 ::: {.column}
-[`@takakioka`](https://github.com/takakioka)
 
-- 東京農工大学 工学府 生命工学専攻 修士課程
+- 大阪大学 微生物病研究所 講師
 
-- 研究テーマ: 大規模コホートデータを用いたアルツハイマー病態進行予測に資する代謝物バイオマーカーの探索
+- 研究: ゲノムレベルの遺伝情報解析
 
-- 趣味: ドライブ
+- プロジェクト: BioRuby
 :::
 ::: {.column}
-![](images/helper_takaki.png){height=350px}
-:::
-:::
-
-## 露崎 弘毅（ヘルパー）
-
-::: {.columns}
-::: {.column}
-[`@kokitsuyuzaki`](https://github.com/kokitsuyuzaki)
-
-- 千葉大学 医学研究院 人工知能（AI）医学 特任講師
-
-- 研究テーマ: パッケージング、（シングルセル）オミックス解析
-
-- 趣味: サーフィン、パン作り
-:::
-::: {.column}
-![](images/helper_koki.jpeg){height=350px}
+![](http://fm.minoh.net/blog/wp/wp-content/uploads/2018/01/machiradio-1.jpg)
 :::
 :::
 
@@ -130,13 +73,13 @@ execute:
 
 ![](https://www.jsbi.org/media/files/_u/key_visual/bxz0ka00r.jpg)
 
-- このワークショップは [日本バイオインフォマティクス学会](https://www.jsbi.org/) の [公募研究会・地域部会](https://www.jsbi.org/activity/koubo/detail--id-790.htm)として採択され、ご協力をいただいています。
+- このワークショップは [日本バイオインフォマティクス学会](https://www.jsbi.org/) の [公募研究会・地域部会](https://www.jsbi.org/activity/koubo/detail--id-898.html)として採択され、ご協力をいただいています。
 
 - 非会員の方はぜひ[入会](https://www.jsbi.org/membership/)をご検討ください。
 
 ## 準備
 
-- [ソフトウェアのインストール（bash、git、R, RStudio）](https://swcarpentry-ja.github.io/2024-11-25-chiba/#setup)
+- [ソフトウェアのインストール（R, RStudio）](https://swcarpentry-ja.github.io/2024-11-25-chiba/#setup)
 
 - ファイルのダウンロード
   - [bash](https://swcarpentry-ja.github.io/shell-novice/#download-files)
