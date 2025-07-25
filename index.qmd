@@ -79,14 +79,10 @@ execute:
 
 ## 準備
 
-- [ソフトウェアのインストール（R, RStudio）](https://swcarpentry-ja.github.io/2024-11-25-chiba/#setup)
+- [ソフトウェアのインストール（R, RStudio）](https://bioconductor-translations.github.io/2025-08-05-osaka/#setup)
 
-- ファイルのダウンロード
-  - [bash](https://swcarpentry-ja.github.io/shell-novice/#download-files)
 
-- [ワークショップ前アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2024-11-25-chiba)
-
-## ソフトウェアカーペントリーの紹介 {.center}
+## The Carpentries の紹介 {.center}
 
 ## 問題
 
@@ -103,7 +99,7 @@ execute:
 :::
 :::
 
-## ソフトウェアカーペントリー（SWC）の解決法
+## The Carpentries の解決法
 
 ::: {.columns}
 ::: {.column width="60%"}
@@ -148,7 +144,7 @@ execute:
 
 ## 日本ではまだ始まったばかり
 
-- 今回が**第2回目**の対面日本語ワークショップです。
+- 今回が**第1回目**の対面 Bioconductor Carpentries 日本語ワークショップです。
   - 今後も増やしていく予定です。
 
 - 翻訳活動も行っています。
@@ -159,21 +155,19 @@ execute:
 
   - <https://slack-invite.carpentries.org/> から Slack に参加し、`#local-japan` チャンネルに入ってください。
 
-- GitHub: <https://swcarpentry-ja.github.io/>
+- GitHub: <https://bioconductor-translations.github.io/>
 
 ## ワークショップの流れ {.center}
 
 ## 内容
 
-- 25日：[Shell](https://swcarpentry-ja.github.io/shell-novice)、[Git](https://swcarpentry-ja.github.io/git-novice)
+- 25日：[RとBioconductorによるデータ分析](https://bioconductor-translations.github.io/bioc-intro-ja/)
 
-- 26日：[R](https://swcarpentry-ja.github.io/r-novice-gapminder/)
+- 26日：[Bioconductorプロジェクト](https://bioconductor-translations.github.io/bioc-project-ja/)
 
 上記のリンクからレッスンの内容にアクセスできます<br>（ChatGPTによる翻訳が含まれています）
 
-## SWCワークショップの流れ
-
-- **軽いスライド**による内容の説明
+## ワークショップの流れ
 
 - **ライブコーディング**
 
@@ -196,10 +190,10 @@ execute:
 ::: {.column}
 - インストラクターは参加者の理解を確認します<br>（例：「〜ができましたか？」）
 
-- 理解できている場合は**緑の付箋**をラップトップに貼ってください。
+- 理解できている場合は、Zoom ウェビナーのリアクションでポジティブなリアクションを行ってください。
 
-- 困ったことがある場合は**赤い付箋**をラップトップに貼ってください。
-  - ヘルパーが助けに行きます。
+- 困ったことがある場合は、 Zoom ウェビナーのリアクションでネガティブなリアクションを行ってください。
+  - インストラクター／ヘルパーが質問に応じます。
 :::
 ::: {.column}
 ![](https://carpentries.github.io/instructor-training/fig/Scene_1_blue_stickies_labeled.jpeg)
@@ -210,28 +204,20 @@ execute:
 
 <br><br>
 
-インストラクターが聞かなくても、何か問題があった時は**声をかけてください**（または赤い付箋を貼ってください）。
+インストラクターが聞かなくても、何か問題があった時は**声をかけてください**。
 
 ## コラボレイティブ・ノート
 
-[Etherpad](https://pad.carpentries.org/2024-11-25-chiba)にコードを貼っておきます。
+[Google Docs](https://docs.google.com/document/d/1Hgj6dUMddy1MUTdmWhJ__Xb9mEsQicSRaxQcKt6BG58/edit?tab=t.0#heading=h.qbcr0z1bgtm0)にコードを貼っておきます。
 
-- インストラクターが進みすぎてコードが見えなくなった場合は、Etherpadのメモを参照してください。
+- インストラクターが進みすぎてコードが見えなくなった場合は、Google Docsのメモを参照してください。
   - 参加者も自由に書き込んでください。
 
 ## フィードバックの種類
 
-- 感想（1日の終わりに付箋に記入していただきます）
+- 感想
 
-- ワークショップ前後の[アンケート](https://carpentries.typeform.com/to/CvmMM8re?slug=2024-11-25-chiba)
-
-## アイスブレーカー
-
-隣の方に自己紹介をしましょう
-
-- 研究テーマは何ですか？
-
-- 趣味は何ですか？
+- [アンケート](https://www.jsbi.org/activity/koubo/questionnaires/)
 
 ## 集合写真
 
