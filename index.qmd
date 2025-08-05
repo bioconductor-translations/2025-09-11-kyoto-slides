@@ -175,7 +175,7 @@ execute:
 
 - 6日：[Bioconductorプロジェクト](https://bioconductor-translations.github.io/bioc-project-ja/)
 
-上記のリンクからレッスンの内容にアクセスできます<br>（ChatGPTによる翻訳が含まれています）
+上記のリンクからレッスンの内容にアクセスできます<br>（PLaMo翻訳による翻訳が含まれています）
 
 ## ワークショップの流れ
 
