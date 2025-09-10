@@ -2,168 +2,168 @@
   {
     "objectID": "index.html#アウトライン",
     "href": "index.html#アウトライン",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "アウトライン",
     "text": "アウトライン\n\nスタッフの自己紹介、JSBiの紹介等\nBioconductor と The Carpentries の紹介\nワークショップの流れ\nアイスブレーカー"
   },
   {
     "objectID": "index.html#スタッフの自己紹介",
     "href": "index.html#スタッフの自己紹介",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "スタッフの自己紹介",
     "text": "スタッフの自己紹介"
   },
   {
     "objectID": "index.html#西田-孝三インストラクター",
     "href": "index.html#西田-孝三インストラクター",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "西田 孝三（インストラクター）",
     "text": "西田 孝三（インストラクター）\n\n\n\n理化学研究所 生命機能科学研究センター 技師\n趣味：オープンソース・オープンサイエンスコミュニティに貢献すること\nプロジェクト: Bioconductor パッケージ作成・コミュニティ管理"
   },
   {
-    "objectID": "index.html#後藤-直久ヘルパー",
-    "href": "index.html#後藤-直久ヘルパー",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
-    "section": "後藤 直久（ヘルパー）",
-    "text": "後藤 直久（ヘルパー）\n\n\n\n大阪大学 微生物病研究所 講師\n研究: ゲノムレベルの遺伝情報解析\nプロジェクト: BioRuby"
+    "objectID": "index.html#福島-敦史ヘルパー",
+    "href": "index.html#福島-敦史ヘルパー",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
+    "section": "福島 敦史（ヘルパー）",
+    "text": "福島 敦史（ヘルパー）\n\n\n\n京都府立大学 大学院生命環境科学研究科 植物ゲノム情報学研究室 教授\n研究: データマイニング、代謝ネットワーク、植物システム生物学、ストレス応答、データベース"
   },
   {
     "objectID": "index.html#行動規範",
     "href": "index.html#行動規範",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "行動規範",
     "text": "行動規範\nどなたでも気兼ねなくワークショップに参加できるように、行動規範があります。\n行動規範に反する行為があった場合は、インシデントレポートフォームで報告することができます。"
   },
   {
     "objectID": "index.html#jsbiについて",
     "href": "index.html#jsbiについて",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "JSBiについて",
     "text": "JSBiについて\n\n\nこのワークショップは 日本バイオインフォマティクス学会 の 公募研究会・地域部会として採択され、ご協力をいただいています。\n非会員の方はぜひ入会をご検討ください。"
   },
   {
     "objectID": "index.html#準備",
     "href": "index.html#準備",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "準備",
     "text": "準備\n\nソフトウェアのインストール（R, RStudio）"
   },
   {
     "objectID": "index.html#bioconductor-の紹介",
     "href": "index.html#bioconductor-の紹介",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "Bioconductor の紹介",
     "text": "Bioconductor の紹介"
   },
   {
     "objectID": "index.html#bioconductorとは",
     "href": "index.html#bioconductorとは",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "Bioconductorとは？",
     "text": "Bioconductorとは？\n\nバイオインフォマティクスのためのRパッケージの集合体(多くのRパッケージがBioconductorに登録されており、研究目的に応じたツールが多数揃っている)\n再現可能な解析(コードとドキュメントがセットで提供されるため、解析の再現性が高い)\n専門性の高いデータ構造(SummarizedExperiment や GRanges など、バイオデータ特有の構造に適したクラス設計がされている)"
   },
   {
     "objectID": "index.html#the-carpentries-の紹介",
     "href": "index.html#the-carpentries-の紹介",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "The Carpentries の紹介",
     "text": "The Carpentries の紹介"
   },
   {
     "objectID": "index.html#問題",
     "href": "index.html#問題",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "問題",
     "text": "問題\n\n\n\n研究者は近年、コードを使うことが必要不可欠になっています。\n多くの研究者は独学でコードを学びます。\nしかし、効率があまり良くありません。"
   },
   {
     "objectID": "index.html#the-carpentries-の解決法",
     "href": "index.html#the-carpentries-の解決法",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "The Carpentries の解決法",
     "text": "The Carpentries の解決法\n\n\n\n研究者がコミュニティを作り、互いに教え合います。\n2日間にわたるワークショップで、2〜3つのレッスンを学びます。\n\nhttps://software-carpentry.org/"
   },
   {
     "objectID": "index.html#ワークショップ",
     "href": "index.html#ワークショップ",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "ワークショップ",
-    "text": "ワークショップ\n\n\n\n誰でも参加可能\n無料または少額で提供\nワークショップの指導には資格が必要です。\n改善のためのフィードバックを重視します。"
+    "text": "ワークショップ\n\n\n\n誰でも参加可能\n無料または少額で提供\n““公式”“ワークショップの指導には資格が必要です。\n改善のためのフィードバックを重視します。"
   },
   {
     "objectID": "index.html#日本ではまだ始まったばかり",
     "href": "index.html#日本ではまだ始まったばかり",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "日本ではまだ始まったばかり",
-    "text": "日本ではまだ始まったばかり\n\n今回が第1回目の対面 Bioconductor Carpentries 日本語ワークショップです。\n\nBioconductorの公式ウェブサイトにおけるワークショップ情報\n第2回目も9月11日-12日に京都府立大学でJSBiの公募研究会として開催されることが決まりました\n\n英語教材の翻訳活動も行っています。(翻訳に関するウェブサイトは現在構築中。詳細は後述のSlackでお声がけいただければと…)"
+    "text": "日本ではまだ始まったばかり\n\n今回が第2回目の対面 Bioconductor Carpentries 日本語ワークショップです。\n\nBioconductorの公式ウェブサイトにおけるワークショップ情報\n第1回目は／も8月に大阪大学でJSBiの公募研究会として開催されました\n\n英語教材の翻訳活動も行っています。(翻訳に関するウェブサイトは現在構築中。詳細は後述のSlackでお声がけいただければと…)"
   },
   {
     "objectID": "index.html#参加者大募集中",
     "href": "index.html#参加者大募集中",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "参加者大募集中!",
     "text": "参加者大募集中!\n\nSlack:\n\nhttps://slack-invite.carpentries.org/ から Slack に参加し、#local-japan チャンネルに入ってください。\n\nGitHub:\n\nhttps://bioconductor-translations.github.io/"
   },
   {
     "objectID": "index.html#ワークショップの流れ",
     "href": "index.html#ワークショップの流れ",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "ワークショップの流れ",
     "text": "ワークショップの流れ"
   },
   {
     "objectID": "index.html#内容",
     "href": "index.html#内容",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "内容",
-    "text": "内容\n\n5日：RとBioconductorによるデータ分析\n6日：Bioconductorプロジェクト\n\n上記のリンクからレッスンの内容にアクセスできます（PLaMo翻訳による翻訳が含まれています）"
+    "text": "内容\n\n11日：https://bioconductor-translations.github.io/bioc-rnaseq-ja/ の 5. まで\n12日：https://bioconductor-translations.github.io/bioc-rnaseq-ja/ の 5. ~ 7.\n\n上記のリンクからレッスンの内容にアクセスできます（PLaMo翻訳による翻訳が含まれています）"
   },
   {
     "objectID": "index.html#ワークショップの流れ-1",
     "href": "index.html#ワークショップの流れ-1",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "ワークショップの流れ",
     "text": "ワークショップの流れ\n\nライブコーディング"
   },
   {
     "objectID": "index.html#ライブコーディングとは",
     "href": "index.html#ライブコーディングとは",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "ライブコーディングとは？",
     "text": "ライブコーディングとは？\n\n\n\nインストラクターが入力するコードを、同時に自分のパソコンで入力します。\nコードを理解することを最優先してください（メモを取るよりも）。"
   },
   {
     "objectID": "index.html#ライブコーディングとは-1",
     "href": "index.html#ライブコーディングとは-1",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "ライブコーディングとは？",
     "text": "ライブコーディングとは？\n\n\n\nインストラクターは参加者の理解を確認します（例：「〜ができましたか？」）\n理解できている場合は、Zoom ウェビナーのリアクションでポジティブなリアクションを行ってください。\n困ったことがある場合は、 Zoom ウェビナーのリアクションでネガティブなリアクションを行ってください。\n\nインストラクター／ヘルパーが質問に応じます。"
   },
   {
     "objectID": "index.html#コラボレイティブノート",
     "href": "index.html#コラボレイティブノート",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "コラボレイティブ・ノート",
-    "text": "コラボレイティブ・ノート\nGoogle Docsにコードを貼っておきます。\n\nインストラクターが進みすぎてコードが見えなくなった場合は、Google Docsのメモを参照してください。\n\n参加者も自由に書き込んでください。"
+    "text": "コラボレイティブ・ノート\nGoogle Docs にメモをを貼っていきます。\n\n参加者も自由に書き込んでください。"
   },
   {
     "objectID": "index.html#フィードバックの種類",
     "href": "index.html#フィードバックの種類",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "フィードバックの種類",
     "text": "フィードバックの種類\n\n感想\nアンケート"
   },
   {
     "objectID": "index.html#集合写真",
     "href": "index.html#集合写真",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "集合写真",
     "text": "集合写真\n\n「公開しても大丈夫」という方は、ぜひご協力ください。\n後ろから撮影した集合写真を公開する場合があります。もし公開を希望されない場合は、お知らせください。"
   },
   {
     "objectID": "index.html#アイスブレーカー",
     "href": "index.html#アイスブレーカー",
-    "title": "BiocCarpentriesワークショップ @ 大阪大学",
+    "title": "BiocCarpentriesワークショップ @ 京都府立大学",
     "section": "アイスブレーカー",
     "text": "アイスブレーカー\n\n初対面の人同士が集まる場や、会議やセミナーなど、緊張した雰囲気の中で、参加者同士がリラックスしてコミュニケーションを取りやすくするために行う、場を和ませる活動のこと\n現地限定になりますが、簡単に参加者にも自己紹介お願いできればと。"
   },

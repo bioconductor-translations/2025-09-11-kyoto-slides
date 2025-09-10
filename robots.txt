@@ -1,1 +1,1 @@
-Sitemap: https://bioconductor-translations.github.io/2025-08-05-osaka-slides/sitemap.xml
+Sitemap: https://bioconductor-translations.github.io/2025-09-11-kyoto-slides/sitemap.xml
