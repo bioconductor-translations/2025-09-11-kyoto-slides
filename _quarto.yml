@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "BiocCarpentriesワークショップ @ 大阪大学"
+  title: "BiocCarpentriesワークショップ @ 京都府立大学"
   navbar:
     left:
       - href: index.qmd
