@@ -7,21 +7,21 @@ execute:
   echo: true
 ---
 
-# 第1回 Bioconductor Carpentries 日本語 ワークショップ 
+# 第2回 Bioconductor Carpentries 日本語 ワークショップ 
 
 ::: {.medlarge}
 
 :::: {.columns}
 
 ::: {.column width="70%"}
-大阪大学 微生物病研究所 2025-08-05 ~ 06
+京都三大学教養教育研究・推進機構 稲盛記念会館 2025-09-11 ~ 12
 :::
 
 ::::
 
 :::
 
-<https://bioconductor-translations.github.io/2025-08-05-osaka-slides/>
+<https://bioconductor-translations.github.io/2025-09-11-kyoto-slides/>
 
 ## アウトライン
 
@@ -47,19 +47,18 @@ execute:
 :::
 :::
 
-## 後藤 直久（ヘルパー）
+## 福島 敦史（ヘルパー）
 
 ::: {.columns}
 ::: {.column}
 
-- 大阪大学 微生物病研究所 講師
+- 京都府立大学 大学院生命環境科学研究科 植物ゲノム情報学研究室 教授
 
-- 研究: ゲノムレベルの遺伝情報解析
+- 研究: データマイニング、代謝ネットワーク、植物システム生物学、ストレス応答、データベース
 
-- プロジェクト: BioRuby
 :::
 ::: {.column}
-![](http://fm.minoh.net/blog/wp/wp-content/uploads/2018/01/machiradio-1.jpg)
+![](https://lh5.googleusercontent.com/PLtwoXuuW5epUMDlKkUA8gtxZtuZg40rCKkp8wQXdCeHqwGtXWb1YoBl2STAgk9k-1OgUQHvDtdcjBqdF9NKDLr7bUwz3KHY0EY37fGe8Yagzrd4spJN0Xh09GYio6ZH4bfnB9Z4OPaNmMOaX-1IEhi9DlqNrm5OjvjWyPd3w7ZKcFWyzZQGiQ=w1280)
 :::
 :::
 
@@ -131,7 +130,7 @@ execute:
 
 - 無料または少額で提供
 
-- ワークショップの指導には[資格](https://carpentries.org/become-instructor/)が必要です。
+- ""公式""ワークショップの指導には[資格](https://carpentries.org/become-instructor/)が必要です。
 
 - 改善のためのフィードバックを重視します。
 :::
@@ -151,9 +150,9 @@ execute:
 
 ## 日本ではまだ始まったばかり
 
-- 今回が**第1回目**の対面 Bioconductor Carpentries 日本語ワークショップです。
+- 今回が**第2回目**の対面 Bioconductor Carpentries 日本語ワークショップです。
   - [Bioconductorの公式ウェブサイトにおけるワークショップ情報](https://training.bioconductor.org/collaborations/carpentries/workshops.html)
-  - **第2回目**も[9月11日-12日に京都府立大学でJSBiの公募研究会として開催されることが決まりました](https://www.jsbi.org/activity/koubo/detail--id-935.html)
+  - **第1回目**は／も[8月に大阪大学でJSBiの公募研究会として開催されました](https://carpentries.connpass.com/event/360997/)
 
 - 英語教材の翻訳活動も行っています。(翻訳に関するウェブサイトは現在構築中。詳細は後述のSlackでお声がけいただければと...)
 
@@ -171,11 +170,11 @@ execute:
 
 ## 内容
 
-- 5日：[RとBioconductorによるデータ分析](https://bioconductor-translations.github.io/bioc-intro-ja/)
+- 11日：[https://bioconductor-translations.github.io/bioc-rnaseq-ja/ の 5. まで](https://bioconductor-translations.github.io/bioc-rnaseq-ja/)
 
-- 6日：[Bioconductorプロジェクト](https://bioconductor-translations.github.io/bioc-project-ja/)
+- 12日：[https://bioconductor-translations.github.io/bioc-rnaseq-ja/ の 5. ~ 7.](https://bioconductor-translations.github.io/bioc-rnaseq-ja/)
 
-上記のリンクからレッスンの内容にアクセスできます<br>（PLaMo翻訳による翻訳が含まれています）
+上記のリンクからレッスンの内容にアクセスできます<br>（[PLaMo翻訳](https://plamo.preferredai.jp/)による翻訳が含まれています）
 
 ## ワークショップの流れ
 
@@ -218,10 +217,9 @@ execute:
 
 ## コラボレイティブ・ノート
 
-[Google Docs](https://docs.google.com/document/d/1Hgj6dUMddy1MUTdmWhJ__Xb9mEsQicSRaxQcKt6BG58/edit?tab=t.0#heading=h.qbcr0z1bgtm0)にコードを貼っておきます。
+[Google Docs](https://docs.google.com/document/d/1AqoUqAGFtdhcfQdZcW4TOs_F_3LMVa0Wtfb33NUYha0/edit?usp=sharing) にメモをを貼っていきます。
 
-- インストラクターが進みすぎてコードが見えなくなった場合は、Google Docsのメモを参照してください。
-  - 参加者も自由に書き込んでください。
+- 参加者も自由に書き込んでください。
 
 ## フィードバックの種類
 
